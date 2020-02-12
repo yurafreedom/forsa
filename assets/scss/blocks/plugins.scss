@@ -1,0 +1,286 @@
+.tooltipster-base {
+	width: 100%;
+	max-width: 234px;
+	height: auto !important;
+}
+
+.tooltipster-sidetip .tooltipster-box {
+	background-color: #fff;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 16px 10px rgba(0,0,0,0.16);
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+	border-top-color: #fff !important;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+	border-top-color: #fff !important;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+  width: 100%;
+	font-size: 12px;
+	line-height: 1.33;
+	font-weight: 400;
+	color: #727272;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.error-message {
+  position: absolute;
+  top: 10px;
+  right: 85px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #d35e5e;
+}
+
+.jq-dropdown .jq-dropdown-menu {
+  max-width: 520px;
+}
+
+.jq-dropdown.jq-dropdown-tip {
+  margin-top: 20px;
+}
+
+.jq-dropdown.jq-dropdown-tip.jq-dropdown-anchor-right:before {
+  right: 145px;
+}
+.jq-dropdown.jq-dropdown-tip.jq-dropdown-anchor-right:after {
+  right: 146px;
+}
+
+.nice-select,
+.nice-select .list {
+  background-color: #fff;
+}
+
+.nice-select {
+  position: relative;
+  border-radius: 0;
+  border: 1px solid #b8b8b8;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #323232;
+  box-shadow: none;
+  text-align: left!important;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 570px;
+  outline: 0;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:hover, &:active, &:focus {
+    border-color: #5b86c5;
+    box-shadow: 1px 0 6px rgba(87, 138, 215, 0.49);
+  }
+}
+
+.nice-select .current {
+	display: block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  color: #323232;
+  font-weight: 400;
+}
+
+.nice-select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 14px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-image: url('../img/chevron-blog-blue.svg');
+  background-position: center center;
+  transition: all .2s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.nice-select.open::after {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d0d0d0;
+  }
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+    border-radius: 10px;
+  }
+}
+
+.nice-select .list,
+.page-header__nav ul li a.active,
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.nice-select.disabled {
+  border-color: #ededed;
+  color: #999;
+  pointer-events: none;
+}
+
+.nice-select.disabled::after {
+  border-color: #ccc;
+}
+
+.nice-select.wide {
+  width: 100%;
+}
+
+.nice-select.wide .list {
+  left: 0;
+  right: 0;
+}
+
+.nice-select.right {
+  float: right;
+}
+
+.nice-select.right .list {
+  left: auto;
+  right: 0;
+}
+
+.nice-select.small {
+  font-size: 12px;
+  height: 36px;
+  line-height: 34px;
+}
+
+.nice-select.small::after {
+  height: 4px;
+  width: 4px
+}
+
+.nice-select.small .option {
+  line-height: 34px;
+  min-height: 34px;
+}
+
+.nice-select .list {
+  width: auto;
+  min-width: 100%;
+  border: none;
+  box-sizing: border-box;
+  opacity: 0;
+  padding: 0;
+  overflow: visible;
+  overflow-y: auto;
+  max-height: 200px;
+  position: absolute;
+  top: 100%;
+  margin-top: 5px;
+  left: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #323232;
+  border-radius: 0;
+  border: 1px solid #b8b8b8;
+  box-shadow: 0 20px 40px rgba(187, 196, 215, .2);
+  transition: opacity .15s ease-out;
+  z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+  background-color: transparent;
+}
+
+.nice-select .option {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  min-height: 40px;
+  line-height: 40px;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  text-align: left;
+  transition: all .3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #323232;
+  &:hover {
+    color: #578ad7;
+  }
+}
+
+.nice-select .option.focus,
+.nice-select .option.selected,
+.nice-select .option.selected.focus,
+.nice-select .option:hover {
+  color: #578ad7  ;
+}
+
+.nice-select .option.disabled {
+  display: none;
+  background-color: transparent;
+  color: #999;
+  cursor: default;
+}
+
+[hidden] {
+  display: none!important;
+}
+
+@include for-size(mobile) {
+  #jq-dropdown-1.jq-dropdown.jq-dropdown-tip {
+    left: auto !important;
+    right: 0;
+  }
+  .jq-dropdown .jq-dropdown-menu {
+    max-width: 290px;
+  }
+}

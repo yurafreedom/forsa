@@ -1,0 +1,30 @@
+.btn--explorer {
+	width: 172px;
+}
+
+.btn--wallet {
+	width: 284px;
+	text-align: left;
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-bottom: 12px;
+}
+
+.btn--mining {
+	width: 284px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	text-align: left;
+	b {
+		display: block;
+		font-size: 22px;
+		font-weight: 600;
+		color: #fff;
+	}
+	span {
+		display: block;
+		font-size: 17px;
+		font-weight: 400;
+		color: #54cdfa;
+	}
+}

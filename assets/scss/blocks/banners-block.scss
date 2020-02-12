@@ -1,0 +1,55 @@
+.banners-block {
+	position: relative;
+	overflow: hidden;
+	margin-top: -188px;
+	&__slider {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	&__slide {
+		position: relative;
+		display: block;
+		width: 1200px;
+		margin: 0 auto;
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 549px;
+	}
+	&__slide-heading {
+		position: relative;
+		display: block;
+		padding-top: 75px;
+		padding-left: 80px;
+	}
+	&__slide-construction-title {
+		display: block;
+		font-size: 50px;
+		font-weight: 700;
+		color: #fff;
+		margin-top: 130px;
+		span {
+			color: #6ee8fc;
+		}
+	}
+	&__slide-dapps-title {
+		display: block;
+		font-size: 44px;
+		font-weight: 700;
+		color: #fff;
+		margin-top: 100px;
+		span {
+			color: #6ee8fc;
+		}
+	}
+}
+
+#banners_slider .swiper-wrapper {
+	justify-content: center;
+}
+#banners_slider .swiper-slide {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 60px;
+}
