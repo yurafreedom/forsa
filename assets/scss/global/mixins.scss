@@ -69,10 +69,14 @@
 		line-height: 1;
 	}
 	&:hover {
+		color: #fff;
 		box-shadow: none;
+		text-decoration: none;
+		background: linear-gradient(to top, #2f97f0, #473dbe);
 	}
-	&:active {
+	&:active, &:focus {
 		box-shadow: none;
+		background: #4842b4;
 	}
 	&:active,
 	&:focus,
@@ -121,6 +125,8 @@
 	.container {
 		width: 100%;
 		max-width: 1390px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
