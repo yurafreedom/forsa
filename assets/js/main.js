@@ -185,6 +185,7 @@ $(document).ready(function () {
       var mainSwiper = new Swiper ('#main_slider', {
         slidesPerView: 1,
         spaceBetween: 0,
+        loop: true,
         speed: 6000,
         autoplay: {
           enabled: true,
