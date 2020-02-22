@@ -185,9 +185,9 @@ $(document).ready(function () {
       var mainSwiper = new Swiper ('#main_slider', {
         slidesPerView: 1,
         spaceBetween: 0,
-        // autoplay: {
-        //   delay: 8000,
-        // },
+        autoplay: {
+          delay: 8000,
+        },
       });
       $(window).resize(function() {
           mainSwiper.update(true),
