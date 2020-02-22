@@ -296,6 +296,57 @@
 	}
 }
 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+	.shard-block {
+		&__honeycombs-photo {
+			right: -56px;
+		}
+		&__honeycombs-option {
+			&.third {
+				left: 258px;
+			}
+			&.sixth {
+				top: 235px;
+				right: -6px;
+			}
+			&.seventh {
+				left: 274px;
+			}
+			&.eighth {
+				display: block;
+				left: auto;
+				top: 215px;
+				right: 55px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.shard-block {
+		&__honeycombs-option {
+			&.first {
+				left: 200px;
+			}
+			&.third {
+				left: 262px;
+			}
+			&.fourth {
+				left: 154px;
+			}
+			&.seventh {
+				left: 278px;
+			}
+		}
+		&__title {
+			margin-bottom: 330px;
+		}
+		&__content-block {
+			max-width: 100%;
+		}
+	}
+}
+
 @include for-size(tablet) {
 	.shard-block {
 		padding-bottom: 75px;

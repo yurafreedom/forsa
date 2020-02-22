@@ -189,6 +189,11 @@
 		font-weight: 600;
 		color: #5588fe;
 		margin-bottom: 35px;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+			color: darken(#5588fe, 15%);
+		}
 	}
 	&__card-date {
 		display: block;

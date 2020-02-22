@@ -4424,7 +4424,11 @@ body.scroll-top-active .page-header__scroll-up {
     font-size: 25px;
     font-weight: 600;
     color: #5588fe;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    transition: all 0.3s ease-in-out; }
+    .news-block__card-title:hover, .news-block__card-title:active, .news-block__card-title:focus {
+      text-decoration: none;
+      color: #0953fe; }
   .news-block__card-date {
     display: block;
     font-size: 20px;
@@ -5120,6 +5124,10 @@ main {
   .stats-block__title::before {
     top: -110px;
     left: 0; } }
+
+@media screen and (min-width: 1920px) {
+  main {
+    background-size: 100% auto; } }
 
 .reward-block {
   padding-top: 100px;
@@ -5966,6 +5974,36 @@ main {
         left: 272px; }
       .shard-block__honeycombs-option.eighth {
         display: none; } }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .shard-block__honeycombs-photo {
+    right: -56px; }
+  .shard-block__honeycombs-option.third {
+    left: 258px; }
+  .shard-block__honeycombs-option.sixth {
+    top: 235px;
+    right: -6px; }
+  .shard-block__honeycombs-option.seventh {
+    left: 274px; }
+  .shard-block__honeycombs-option.eighth {
+    display: block;
+    left: auto;
+    top: 215px;
+    right: 55px; } }
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .shard-block__honeycombs-option.first {
+    left: 200px; }
+  .shard-block__honeycombs-option.third {
+    left: 262px; }
+  .shard-block__honeycombs-option.fourth {
+    left: 154px; }
+  .shard-block__honeycombs-option.seventh {
+    left: 278px; }
+  .shard-block__title {
+    margin-bottom: 330px; }
+  .shard-block__content-block {
+    max-width: 100%; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .shard-block {
