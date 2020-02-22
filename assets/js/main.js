@@ -227,6 +227,74 @@ $(document).ready(function () {
  }
 });
 
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var competitorSwiper = new Swiper ('#competitors_slider', {
+        slidesPerView: 'auto',
+        speed: 1000,
+        navigation: {
+            nextEl: '.competitor-button-next',
+            prevEl: '.competitor-button-prev',
+        },
+        on: {
+          slideNextTransitionStart: function () {
+            $('.competitor-button-prev').addClass('active');
+          },
+        },
+      });
+      $(window).resize(function() {
+          competitorSwiper.update(true),
+          console.log("competitorSwiper update")
+      })
+ }
+});
+
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var teamSwiper = new Swiper ('#team_slider', {
+        slidesPerView: 'auto',
+        speed: 1000,
+        spaceBetween: 40,
+        navigation: {
+            nextEl: '.team-button-next',
+            prevEl: '.team-button-prev',
+        },
+        on: {
+          slideNextTransitionStart: function () {
+            $('.team-button-prev').addClass('active');
+          },
+        },
+      });
+      $(window).resize(function() {
+          teamSwiper.update(true),
+          console.log("teamSwiper update")
+      })
+ }
+});
+
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var adviserSwiper = new Swiper ('#adviser_slider', {
+        slidesPerView: 'auto',
+        speed: 1000,
+        spaceBetween: 40,
+        navigation: {
+            nextEl: '.adviser-button-next',
+            prevEl: '.adviser-button-prev',
+        },
+        on: {
+          slideNextTransitionStart: function () {
+            $('.adviser-button-prev').addClass('active');
+          },
+        },
+      });
+      $(window).resize(function() {
+          adviserSwiper.update(true),
+          console.log("adviserSwiper update")
+      })
+ }
+});
+
 $('.page-header__toggle-language').on('click', function() {
   $(this).toggleClass('active');
 });

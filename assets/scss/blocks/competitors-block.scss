@@ -1,0 +1,384 @@
+.competitors-block {
+	padding-top: 150px;
+	padding-bottom: 80px;
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+	&__card-block {
+		position: relative;
+		display: block;
+	}
+	&__title {
+		display: block;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 115px;
+	}
+	&__points-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 320px;
+		margin-bottom: 10px;
+	}
+	&__points-inner {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	&__points-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 320px;
+		padding-left: 40px;
+		height: 75px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1;
+		color: #fff;
+		background-color: #282379;
+		&:not(:last-child) {
+			margin-bottom: 2px;
+		}
+	}
+	&__slider-wrapper {
+		position: relative;
+		display: block;
+	}
+	&__slide {
+		position: relative;
+		display: block;
+		margin-top: 10px;
+		top: 10px;
+	}
+	&__card-block {
+		position: relative;
+		display: block;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	&__card-heading {
+		position: relative;
+		display: block;
+		max-width: 267px;
+		margin-bottom: 2px;
+	}
+	&__card-heading-title {
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: #fff;
+		padding-top: 22px;
+		padding-bottom: 23px;		
+		background-color: #282379;
+	}
+	&__card-inner {
+		position: relative;
+		display: block;
+	}
+	&__card-inner-value {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 267px;
+		height: 75px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1;
+		color: #fff;
+		background-color: #282379;
+		span {
+			font-size: 17px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 2px;
+		}
+	}
+	&__card-block.first &__card-heading-title {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	#competitors_slider .swiper-slide-active &__card-block {
+		top: -10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 5px;
+		background: linear-gradient(to top, #564ae2, #2484ee);
+	}
+	#competitors_slider .swiper-slide-active &__card-heading-title {
+		background: 0;
+	}
+	#competitors_slider .swiper-slide-active &__card-inner-value {
+		background: 0;
+	}
+	.competitor-button-prev {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.competitors-block {
+		padding-top: 70px;
+		padding-bottom: 45px;
+		&__wrapper {
+			justify-content: center;
+		}
+		&__title {
+			font-size: 25px;
+			margin-bottom: 40px;
+			text-align: left;
+		}
+		&__points-block, &__points-title {
+			max-width: 140px;
+		}
+		.competitor-button-prev, .competitor-button-next {
+			top: 321px;
+			width: 34px;
+			height: 34px;
+			box-shadow: 5px 0 12px rgba(0,0,0,0.35);
+		}
+		.competitor-button-prev {
+			left: -17px;
+			&::before {
+				top: 11px;
+				left: 13px;
+				width: 6px;
+				height: 12px;
+			}
+		}
+		.competitor-button-next {
+			right: -17px;
+			&::after {
+				top: 11px;
+				right: 13px;
+				left: auto;
+				width: 6px;
+				height: 12px;
+			}
+		}
+		#competitors_slider .swiper-slide {
+			width: 140px !important;
+		}
+		#competitors_slider.swiper-container {
+			max-width: 140px;
+		}
+		&__card-heading, &__card-inner-value {
+			max-width: 140px;
+		}
+		&__card-heading-title {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #388cf2;
+		}
+		&__card-inner-value, &__points-title {
+			height: 60px;
+		}
+		&__card-inner-value {
+			padding-left: 15px;
+			padding-right: 15px;
+			&:not(:last-child) {
+				border-bottom: 1px solid #388cf2;
+			}
+		}
+		&__points-title span, &__card-inner-value span {
+			font-size: 14px;
+			font-weight: 400;
+		}
+		&__card-heading-title {
+			font-size: 16px;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+		&__points-title, &__card-inner-value {
+			font-size: 16px;
+			font-weight: 600;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}			
+		}
+		&__points-title {
+			padding-left: 20px;
+			border-bottom: 1px solid #263f94;
+			border-radius: 0;
+			background-color: #213087;
+			&:first-child {
+				border-top-left-radius: 5px;
+			}
+			&:last-child {
+				border-bottom-left-radius: 5px;
+			}
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.competitors-block {
+		padding-top: 75px;
+		&__wrapper {
+			justify-content: center;
+		}
+		&__title {
+			font-size: 34px;
+			margin-bottom: 80px;
+		}
+		&__points-block, &__points-title {
+			max-width: 200px;
+		}
+		.competitor-button-prev, .competitor-button-next {
+			top: 276px;
+			width: 45px;
+			height: 45px;
+		}
+		.competitor-button-prev {
+			left: -22px;
+			&::before {
+				top: 16px;
+				left: 16px;
+				width: 10px;
+				height: 14px;
+			}
+		}
+		.competitor-button-next {
+			right: -22px;
+			&::after {
+				top: 16px;
+				left: auto;
+				right: 18px;
+				width: 10px;
+				height: 14px;
+			}
+		}
+		#competitors_slider .swiper-slide {
+			width: 250px !important;
+		}
+		#competitors_slider.swiper-container {
+			max-width: 500px;
+		}
+		&__card-heading, &__card-inner-value {
+			max-width: 250px;
+		}
+		&__card-heading-title {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		&__card-inner-value, &__points-title {
+			height: 50px;
+		}
+		&__card-inner-value span {
+			font-size: 12px;
+		}
+		&__card-heading-title {
+			font-size: 18px;
+		}
+		&__points-title, &__card-inner-value {
+			font-size: 14px;
+		}
+		&__points-title {
+			padding-left: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.competitors-block {
+		&__points-block, &__points-title {
+			max-width: 240px;
+		}
+		.competitor-button-prev, .competitor-button-next {
+			top: 331px;
+		}
+		.competitor-button-prev {
+			&::before {
+				top: 16px;
+				left: 16px;
+				width: 10px;
+				height: 14px;
+			}
+		}
+		.competitor-button-next {
+			right: 0;
+			&::after {
+				top: 16px;
+				left: auto;
+				right: 18px;
+				width: 10px;
+				height: 14px;
+			}
+		}
+		#competitors_slider.swiper-container {
+			max-width: 750px;
+		}
+		&__card-heading-title {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		&__card-inner-value, &__points-title {
+			height: 60px;
+		}
+		&__card-heading-title {
+			font-size: 18px;
+		}
+		&__points-title, &__card-inner-value {
+			font-size: 16px;
+		}
+		&__card-inner-value span {
+			font-size: 14px;
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.competitors-block {
+		&__points-block, &__points-title {
+			max-width: 290px;
+		}
+		#competitors_slider.swiper-container {
+			max-width: 801px;
+		}
+		&__card-heading-title {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		&__card-inner-value, &__points-title {
+			height: 60px;
+		}
+		&__card-heading-title {
+			font-size: 18px;
+		}
+		&__points-title, &__card-inner-value {
+			font-size: 16px;
+		}
+		&__card-inner-value span {
+			font-size: 14px;
+		}
+		.competitor-button-prev, .competitor-button-next {
+			top: 318px;
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+	.competitors-block {
+		&__points-block, &__points-title {
+			max-width: 290px;
+		}
+	}
+}

@@ -23,19 +23,25 @@
 		background-size: contain;
 		background-position: center top;
 	}
-	&__slide-inner {
-		position: relative;
+	&__content-block {
+		position: absolute;
+		top: 0;
+		left: 50%;
 		display: block;
+		width: 100%;
+		margin-left: -695px;
+		max-width: 1390px;
 		padding-top: 480px;
+		z-index: 100;
 	}
-	&__slide-heading {
+	&__content-heading {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 300px;
 	}
-	&__slide-wrapper {
+	&__content-wrapper {
 		position: relative;
 		display: block;
 		flex-shrink: 0;
@@ -117,7 +123,7 @@
 @include for-size(mobile) {
 	.main-block {
 		&__slide {
-			min-height: auto;
+			min-height: 600px;
 			background-size: auto 600px;
 		}
 		&__slide-inner {
@@ -127,26 +133,35 @@
 		&__title {
 			font-size: 26px;
 			margin-top: 115px;
-			margin-bottom: 90px;
+			margin-bottom: 80px;
 			max-width: 500px;
 		}
-		&__slide-heading {
+		&__content-block {
+			top: 50px;
+			left: 0;
+			margin-left: 0;
+			padding-top: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+			max-width: 100%;
+		}
+		&__content-heading {
 			display: block;
 			margin-bottom: 30px;
 		}
-		&__slide-wrapper .btn--wallet,
-		&__slide-wrapper .btn--mining {
+		&__content-wrapper .btn--wallet,
+		&__content-wrapper .btn--mining {
 			width: 280px;
 			margin: 0 auto;
 		}
-		&__slide-wrapper .btn--wallet {
+		&__content-wrapper .btn--wallet {
 			margin-bottom: 16px;
 		}
-		&__slide-wrapper .btn--wallet {
+		&__content-wrapper .btn--wallet {
 			padding-top: 8px;
 			padding-bottom: 8px;
 		}
-		&__slide-wrapper .btn--mining {
+		&__content-wrapper .btn--mining {
 			padding-top: 8px;
 			padding-bottom: 8px;
 			b {
@@ -176,21 +191,25 @@
 			font-size: 36px;
 			max-width: 500px;
 		}
-		&__slide-inner {
+		&__content-block {
+			left: 0;
+			margin-left: 0;
 			padding-top: 300px;
 			padding-bottom: 120px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 		&__slide {
-			min-height: auto;
+			min-height: 732px;
 			background-size: auto 732px;
 		}
-		&__slide-heading {
+		&__content-heading {
 			margin-bottom: 80px;
 		}
 		&__about-block {
 			margin-bottom: 0;
 		}
-		&__slide-wrapper {
+		&__content-wrapper {
 			.btn--wallet {
 				width: 250px;
 			}
@@ -229,10 +248,14 @@
 		&__slide {
 			min-height: 940px;
 		}
-		&__slide-inner {
+		&__content-block {
 			padding-top: 350px;
+			left: 0;
+			margin-left: 0;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
-		&__slide-heading {
+		&__content-heading {
 			margin-bottom: 100px;
 		}
 	}
@@ -246,10 +269,10 @@
 		&__slide {
 			min-height: 1080px;
 		}
-		&__slide-inner {
+		&__content-block {
 			padding-top: 400px;
 		}
-		&__slide-heading {
+		&__content-heading {
 			margin-bottom: 150px;
 		}
 	}
@@ -271,12 +294,15 @@
 		&__slide {
 			min-height: 1180px;
 		}
+		&__content-heading {
+			margin-bottom: 150px;
+		}
 	}
 }
 
 @media screen and (min-width: 1800px) and (max-width: 1919px) {
 	.main-block {
-		&__slide-heading {
+		&__content-heading {
 			margin-bottom: 350px;
 		}
 	}

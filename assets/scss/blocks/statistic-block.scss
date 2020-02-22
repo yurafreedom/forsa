@@ -143,6 +143,14 @@
 	}
 }
 
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.statistic-block {
+		&__card {
+			max-width: 170px;
+		}
+	}
+}
+
 @include for-size(tablet) {
 	.statistic-block {
 		padding-top: 50px;

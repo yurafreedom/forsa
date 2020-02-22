@@ -1,0 +1,378 @@
+.reward-block {
+	padding-top: 100px;
+	padding-bottom: 150px;
+	&__title {
+		display: block;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 150px;
+	}
+	&__diagram-block {
+		position: relative;
+		display: block;
+	}
+	&__diagram-photo {
+		display: block;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	&__diagram-photo {
+		img.desktop {
+			display: block;
+		}
+		img.mobile {
+			display: none;
+		}
+	}
+	&__timeline-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 523px;
+	}
+	&__timeline-description {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		max-width: 390px;
+		text-align: left;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.29;
+		color: #fff;
+	}
+	&__timeline-photo {
+		display: block;
+		margin-bottom: 20px;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__timeline-title {
+		display: block;
+		width: 100%;
+		max-width: 390px;
+		text-align: right;
+		font-size: 28px;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__diagram-title {
+		position: absolute;
+		top: -60px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		z-index: 10;
+	}
+	&__diagram-subtitle {
+		position: absolute;
+		top: 225px;
+		left: 450px;
+		display: block;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__diagram-invest-block {
+		position: absolute;
+		top: -55px;
+		right: 0;
+		display: block;
+	}
+	&__diagram-invest-title {
+		display: block;
+		font-size: 28px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 50px;
+	}
+	&__diagram-invest-text {
+		display: block;
+		width: 100%;
+		max-width: 310px;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.35;
+		color: #fff;
+	}
+	&__diagram-invest-link {
+		display: block;
+		font-size: 17px;
+		font-weight: 400;
+		color: #5388ff;
+	}
+	&__diagram-miner-block {
+		position: absolute;
+		left: 60px;
+		bottom: -4px;
+	}
+	&__diagram-miner-title {
+		display: block;
+		font-size: 28px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 60px;
+	}
+	&__diagram-miner-text {
+		display: block;
+		width: 100%;
+		max-width: 210px;
+		font-size: 17px;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__diagram-develop-block {
+		position: absolute;
+		right: 0;
+		bottom: -92px;
+		display: block;
+	}
+	&__diagram-develop-title {
+		display: block;
+		width: 100%;
+		max-width: 290px;
+		font-size: 28px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 60px;
+	}
+	&__diagram-develop-list {
+		position: relative;
+		display: block;
+	}
+	&__diagram-develop-list ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 17px;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__diagram-develop-list ul li:not(:last-child) {
+		margin-bottom: 5px;
+	}
+}
+
+@include for-size(mobile) {
+	.reward-block {
+		padding-bottom: 140px;
+		padding-bottom: 70px;
+		&__diagram-photo {
+			img.desktop {
+				display: none;
+			}
+			img.mobile {
+				display: block;
+				margin: 0;
+				margin-left: -15px;
+			}
+		}
+		&__title {
+			font-size: 25px;
+			margin-bottom: 30px;
+			text-align: left;
+		}
+		&__diagram-subtitle {
+			left: 0;
+		}
+		&__timeline-block {
+			margin-bottom: 80px;
+		}
+		&__timeline-photo {
+			margin-bottom: 10px;
+		}
+		&__timeline-title {
+			font-size: 16px;
+			text-align: center;
+		}
+		&__timeline-description {
+			font-size: 14px;
+		}
+		&__diagram-invest-block {
+			top: -45px;
+			max-width: 130px;
+		}
+		&__diagram-title {
+			font-size: 15px;
+			top: 8px;
+			left: 7px;
+			transform: translateX(0);
+		}
+		&__diagram-invest-title, &__diagram-miner-title, &__diagram-develop-title {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		&__diagram-invest-text, &__diagram-invest-link, &__diagram-miner-text {
+			font-size: 14px;
+		}
+		&__diagram-invest-text {
+			p {
+				margin: 0;
+			}
+		}
+		&__diagram-develop-list ul {
+			font-size: 14px;
+		}
+		&__diagram-develop-list ul li:not(:last-child) {
+			margin-bottom: 0;
+		}
+		&__diagram-miner-block {
+			max-width: 150px;
+			left: auto;
+			right: 0;
+			bottom: -55px;
+		}
+		&__diagram-develop-block {
+			max-width: 140px;
+			bottom: 40px;
+		}
+		&__diagram-subtitle {
+			top: auto;
+			bottom: 140px;
+			font-size: 15px;
+		}
+		&__diagram-block {
+			max-width: 300px;
+		}
+	}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.reward-block {
+		&__title {
+			text-align: center;
+		}
+		&__diagram-develop-block {
+			max-width: 200px;
+			right: -60px;
+			bottom: 58px;
+		}
+		&__diagram-invest-block {
+			max-width: 180px;
+			right: -50px;
+			top: -28px;
+		}
+		&__timeline-description {
+			max-width: 316px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.reward-block {
+		padding-top: 50px;
+		padding-bottom: 75px;
+		&__title {
+			font-size: 34px;
+			margin-bottom: 80px;
+		}
+		&__diagram-title {
+			top: -45px;
+		}
+		&__timeline-block {
+			margin-bottom: 100px;
+		}
+		&__timeline-description {
+			font-size: 14px;
+		}
+		&__timeline-title {
+			font-size: 20px;
+		}
+		&__diagram-subtitle {
+			top: 150px;
+			left: 50%;
+			margin-left: -200px;
+		}
+		&__diagram-photo {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&__diagram-miner-block {
+			left: 0;
+			bottom: 10px;
+		}
+		&__diagram-miner-title, &__diagram-invest-title, &__diagram-develop-title {
+			font-size: 20px;
+		}
+		&__diagram-miner-text, &__diagram-invest-text, &__diagram-develop-text, &__diagram-invest-link {
+			font-size: 14px;
+		}
+		&__diagram-invest-title {
+			margin-bottom: 60px;
+		}
+		&__diagram-invest-text {
+			max-width: 200px;
+		}
+		&__diagram-invest-block {
+			top: -40px;
+			right: 0;
+			text-align: right;
+		}
+		&__diagram-develop-block {
+			right: 0;
+			bottom: -70px;
+			text-align: right;
+		}
+		&__diagram-develop-list ul {
+			font-size: 14px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.reward-block {
+		&__diagram-subtitle {
+			top: 220px;
+			margin-left: -250px;
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.reward-block {
+		&__diagram-title {
+			top: -45px;
+		}
+		&__diagram-subtitle {
+			top: 170px;
+			left: 380px;
+		}
+		&__diagram-photo {
+			img {
+				max-width: 800px;
+			}
+		}
+		&__diagram-miner-block {
+			bottom: -20px;
+		}
+		&__diagram-miner-title, &__diagram-invest-title, &__diagram-develop-title {
+			font-size: 25px;
+		}
+		&__diagram-miner-text, &__diagram-invest-text, &__diagram-develop-text, &__diagram-invest-link {
+			font-size: 16px;
+		}
+		&__diagram-invest-block {
+			top: -40px;
+			right: -15px;
+		}
+		&__diagram-develop-block {
+			right: -15px;
+			bottom: -110px;
+		}
+	}
+}

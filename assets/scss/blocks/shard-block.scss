@@ -1,0 +1,403 @@
+.shard-block {
+	padding-top: 80px;
+	padding-bottom: 150px;
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__content-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 570px;
+	}
+	&__section-title {
+		position: absolute;
+		top: 170px;
+		bottom: auto;
+		width: 9px;
+		left: -130px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #8e71e0;
+		b {
+			position: relative;
+			display: block;
+			left: 12px;
+			bottom: 10px;
+			transform: rotate(-90deg);
+		}
+		b span {
+			position: relative;
+			top: -25px;
+			left: 67px;
+			display: block;
+			transform: rotate(0);
+		}
+		span {
+			position: relative;
+			display: block;
+			bottom: 70px;
+			transform: rotate(-90deg);
+		}
+		img {
+			display: block;
+			width: 9px;
+			height: 299px;
+		}
+	}
+	&__title {
+		display: block;
+		width: 100%;
+		max-width: 500px;
+		font-size: 40px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 50px;
+	}
+	&__text {
+		display: block;
+		font-size: 20px;
+		font-weight: 400;
+		color: #fff;
+		p {
+			margin-bottom: 40px;
+		}
+	}
+	&__honeycombs-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 808px;
+		z-index: 1;
+	}
+	&__honeycombs-photo {
+		position: absolute;
+		top: -200px;
+		right: 0;
+		display: block;
+		width: 808px;
+		height: 669px;
+		z-index: 10;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__honeycombs-title {
+		position: absolute;
+		top: auto;
+		left: auto;
+		right: 0;
+		bottom: 182px;
+		width: 9px;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #8e71e0;
+		b {
+			position: relative;
+			display: block;
+			left: auto;
+			right: 50px;
+			bottom: 80px;
+			transform: rotate(90deg);
+		}
+		b span {
+			position: relative;
+			top: -48px;
+			left: 135px;
+			display: block;
+			transform: rotate(0);
+		}
+		p {
+			position: relative;
+			top: -145px;
+			left: -75px;
+			display: block;
+			transform: rotate(90deg);
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: none;
+		}
+		p span {
+			position: relative;
+			top: -20px;
+			left: 85px;
+			display: block;
+			bottom: 70px;
+			transform: rotate(0);
+		}
+	}
+	&__honeycombs-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: auto;
+		z-index: -1;
+	}
+	&__honeycombs-option {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		font-size: 24px;
+		font-weight: 600;
+		color: #fff;
+		&.first {
+			top: 65px;
+			left: 120px;
+		}
+		&.second {
+			left: 360px;
+		}
+		&.third {
+			top: 40px;
+			left: 500px;
+		}
+		&.fourth {
+			top: 100px;
+			left: 260px;
+		}
+		&.fifth {
+			top: 170px;
+			left: 565px;
+		}
+		&.sixth {
+			top: 240px;
+			left: 290px;
+		}
+		&.seventh {
+			top: 280px;
+			left: 430px;
+		}
+		&.eighth {
+			top: 310px;
+			left: 570px;
+		}
+	}
+}
+
+@include for-size(mobile) {
+	.shard-block {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		overflow: hidden;
+		&__section-title {
+			display: none;
+		}
+		&__content-block {
+			max-width: 450px;
+		}
+		&__title {
+			max-width: 100%;
+			font-size: 25px;
+			margin-bottom: 300px;
+		}
+		&__text {
+			font-size: 15px;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		&__honeycombs-block {
+			position: absolute;
+			top: 25px;
+			left: 0;
+			width: 100%;
+			height: 240px;
+			display: block;
+			max-width: 350px;
+		}
+		&__honeycombs-photo {
+			top: 0;
+			width: 366px;
+			height: auto;
+			right: -110px;
+			z-index: 1;
+		}
+		&__honeycombs-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			left: auto;
+			right: 0;
+			z-index: 10;
+		}		
+		&__honeycombs-title {
+			font-size: 25px;
+			z-index: 10;
+			bottom: 100px;
+			right: auto;
+			left: 0;
+			bottom: -100px;
+			color: #603cae;
+			b {
+				left: 20px;
+				right: auto;
+				bottom: -34px;
+				transform: rotate(-90deg);
+			}
+			b span {
+				top: -24px;
+				left: 75px;
+			}
+			p {
+				top: -10px;
+				left: 35px;
+				font-size: 16px;
+				transform: rotate(-90deg);
+			}
+			p span {
+				left: 68px;
+				top: -16px;
+			}
+		}
+		&__honeycombs-option {
+			font-size: 12px;
+			&.first {
+				top: 90px;
+				left: 195px;
+			}
+			&.second {
+				display: none;
+			}
+			&.third {
+				top: 110px;
+				left: 262px;
+			}
+			&.fourth {
+				top: 140px;
+				left: 148px;
+			}
+			&.fifth {
+				top: 200px;
+				left: 180px;
+			}
+			&.sixth {
+				top: 215px;
+				left: auto;
+				right: 4px;
+			}
+			&.seventh {
+				top: 170px;
+				left: 272px;
+			}
+			&.eighth {
+				display: none;
+			}
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.shard-block {
+		padding-bottom: 75px;
+		&__section-title {
+			display: none;
+		}		
+		&__content-block {
+			max-width: 450px;
+		}
+		&__title {
+			max-width: 450px;
+			font-size: 34px;
+		}
+		&__text {
+			font-size: 16px;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		&__honeycombs-photo {
+			top: 0;
+			width: 100%;
+		}
+		&__honeycombs-inner {
+			left: -140px;
+		}
+		&__honeycombs-block {
+			max-width: 350px;
+		}
+		&__honeycombs-title {
+			font-size: 24px;
+			z-index: 10;
+			bottom: 100px;
+			b {
+				right: 40px;
+			}
+			b span {
+				top: -24px;
+				left: 75px;
+			}
+			p {
+				top: -120px;
+				left: -65px;
+			}
+		}
+		&__honeycombs-option {
+			font-size: 10px;
+			&.first {
+				top: 114px;
+				left: 195px;
+			}
+			&.second {
+				left: 356px;
+				top: 102px;
+			}
+			&.third {
+				top: 90px;
+				left: 296px;
+			}
+			&.fourth {
+				top: 130px;
+				left: 252px;
+			}
+			&.fifth {
+				top: 160px;
+				left: 386px;
+			}
+			&.sixth {
+				top: 190px;
+				left: 268px;
+			}
+			&.seventh {
+				top: 208px;
+				left: 328px;
+			}
+			&.eighth {
+				top: 222px;
+				left: 388px;
+			}
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.shard-block {
+		&__section-title {
+			display: none;
+		}
+		&__content-block {
+			max-width: 500px;
+		}
+		&__title {
+			max-width: 500px;
+		}
+		&__text {
+			font-size: 16px;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		&__honeycombs-inner {
+			left: -140px;
+		}
+	}
+}
