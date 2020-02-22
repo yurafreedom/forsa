@@ -81,6 +81,7 @@
 		pointer-events: none;
 		background: linear-gradient(to top, #2f97f0, #473dbe);
 		z-index: -1;
+		transition: all 0.3s ease-in-out;
 	}
 	&:hover {
 		color: #fff;
@@ -99,6 +100,11 @@
 		text-decoration: none !important;
 		outline: none !important;
 	}
+}
+
+.btn:hover::after {
+	opacity: 1;
+	pointer-events: all;
 }
 
 @mixin for-size($size) {
