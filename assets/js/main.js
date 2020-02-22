@@ -186,7 +186,9 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
-        speed: 6000,
+        speed: 3000,
+        fadeEffect: {crossFade: true},
+        effect: "fade",
         autoplay: {
           enabled: true,
           delay: 10000,
