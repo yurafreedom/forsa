@@ -369,17 +369,30 @@ template {
           backface-visibility: hidden;
   border: none;
   vertical-align: middle;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden; }
   .btn > * {
     line-height: 1; }
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(to top, #2f97f0, #473dbe);
+    z-index: -1; }
   .btn:hover {
     color: #fff;
     box-shadow: none;
-    text-decoration: none;
-    background: linear-gradient(to top, #2f97f0, #473dbe); }
+    text-decoration: none; }
   .btn:active, .btn:focus {
-    box-shadow: none;
-    background: #4842b4; }
+    box-shadow: none; }
+  .btn:active {
+    background-color: #4842b4; }
   .btn:active, .btn:focus, .btn:hover {
     text-decoration: none !important;
     outline: none !important; }
@@ -4711,7 +4724,11 @@ main {
     font-size: 26px;
     font-weight: 400;
     line-height: 1.1;
-    color: #627aff; }
+    color: #627aff;
+    transition: all 0.3s ease-in-out; }
+    .stats-block__option-value:hover, .stats-block__option-value:active, .stats-block__option-value:focus {
+      color: #1639ff;
+      text-decoration: none; }
   .stats-block__container {
     position: relative;
     display: -ms-flexbox;
@@ -5530,15 +5547,15 @@ main {
   .competitors-block__card-block.first .competitors-block__card-heading-title {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; }
-  #competitors_slider .swiper-slide-active .competitors-block__card-block {
+  .competitors-block__card-block.first {
     top: -10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     background: linear-gradient(to top, #564ae2, #2484ee); }
-  #competitors_slider .swiper-slide-active .competitors-block__card-heading-title {
+  .competitors-block__card-block.first .competitors-block__card-heading-title {
     background: 0; }
-  #competitors_slider .swiper-slide-active .competitors-block__card-inner-value {
+  .competitors-block__card-block.first .competitors-block__card-inner-value {
     background: 0; }
   .competitors-block .competitor-button-prev {
     display: none; }
@@ -6293,6 +6310,7 @@ main {
     width: 100%;
     max-width: 604px; }
   .opportunity-block__card-link {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -6316,17 +6334,32 @@ main {
     border-radius: 5px;
     color: #fff;
     background: #213087;
-    transition: all 0.6s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    z-index: 1; }
     .opportunity-block__card-link span {
       display: block; }
+    .opportunity-block__card-link::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #564ae2, #2484ee);
+      box-shadow: 3px 0 7px rgba(0, 0, 0, 0.35);
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+      z-index: -1; }
     .opportunity-block__card-link:not(:nth-child(2n)) {
       margin-right: 30px; }
     .opportunity-block__card-link:hover, .opportunity-block__card-link:active, .opportunity-block__card-link:focus {
-      background: linear-gradient(to top, #564ae2, #2484ee);
-      box-shadow: 3px 0 7px rgba(0, 0, 0, 0.35);
       color: #fff;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out; }
+      text-decoration: none; }
+  .opportunity-block__card-link:hover::after, .opportunity-block__card-link:active::after, .opportunity-block__card-link:focus::after {
+    opacity: 1;
+    pointer-events: all; }
   .opportunity-block__section-title {
     position: absolute;
     top: 170px;

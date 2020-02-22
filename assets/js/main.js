@@ -185,8 +185,10 @@ $(document).ready(function () {
       var mainSwiper = new Swiper ('#main_slider', {
         slidesPerView: 1,
         spaceBetween: 0,
+        speed: 6000,
         autoplay: {
-          delay: 8000,
+          enabled: true,
+          delay: 10000,
         },
       });
       $(window).resize(function() {

@@ -90,6 +90,11 @@ main {
 		font-weight: 400;
 		line-height: 1.1;
 		color: #627aff;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: darken(#627aff, 15%);
+			text-decoration: none;
+		} 
 	}
 	&__container {
 		position: relative;

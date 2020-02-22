@@ -113,17 +113,17 @@
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 	}
-	#competitors_slider .swiper-slide-active &__card-block {
+	&__card-block.first {
 		top: -10px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-radius: 5px;
 		background: linear-gradient(to top, #564ae2, #2484ee);
 	}
-	#competitors_slider .swiper-slide-active &__card-heading-title {
+	&__card-block.first &__card-heading-title {
 		background: 0;
 	}
-	#competitors_slider .swiper-slide-active &__card-inner-value {
+	&__card-block.first &__card-inner-value {
 		background: 0;
 	}
 	.competitor-button-prev {
