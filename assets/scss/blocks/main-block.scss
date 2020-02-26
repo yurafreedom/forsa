@@ -111,23 +111,20 @@
 	&__about-toggle {
 		position: relative;
 		display: block;
-		img {
+		svg {
 			display: block;
-			width: 19px;
-			height: 11px;
+			fill: #4db4e4;
+			transition: all 0.3s ease-in-out;
 		}
 	}
+	#main_slider .swiper-wrapper {
+		transition-timing-function: ease-in-out !important;
+	}
 	#main_slider .swiper-slide {
-
+		transition-duration: 5s !important;
+		transition: visibility 0s 5s, opacity 5s linear !important;
 	}
 }
-
-// @keyframes fade {
-// 	0% {opacity: 0}
-// 	33.333% { opacity: 1}
-// 	66.666% { opacity: 0}
-// 	100% { opacity: 1}
-// }
 
 @include for-size(mobile) {
 	.main-block {

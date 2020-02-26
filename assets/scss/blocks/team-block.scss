@@ -144,6 +144,10 @@
 			font-size: 25px;
 			margin-bottom: 40px;
 		}
+		#team_slider.swiper-container,
+		#adviser_slider.swiper-container {
+			width: 280px !important;
+		}
 		#team_slider .swiper-slide,
 		#adviser_slider .swiper-slide {
 			width: 280px !important;

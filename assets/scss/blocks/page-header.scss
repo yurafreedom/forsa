@@ -53,6 +53,10 @@ body.scroll-top-active .page-header__scroll-up {
 		font-weight: 400;
 		color: #fff;
 		text-decoration: underline;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #60c5f4;
+		}
 	}
 	&__bottom-part {
 		position: relative;
@@ -300,6 +304,11 @@ body.scroll-top-active .page-header__scroll-up {
 		font-size: 16px;
 		font-weight: 600;
 		color: #5388ff;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	&__menu &__nav-body ul {
 		display: block;
@@ -352,28 +361,35 @@ body.scroll-top-active .page-header__scroll-up {
 		transform: rotate(-180deg);
 	}
 	&__scroll-up {
-		opacity: 0;
-		pointer-events: none;
-		position: fixed;
-		left: calc(100vw - 202px);
-		bottom: 132px;
+		position: absolute;
+		left: auto;
+		right: 0;
+		bottom: -90px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 44px;
-		height: 44px;
+		width: 59px;
+		height: 59px;
 		border-radius: 50%;
 		background-color: #fff;
-		box-shadow: 5px 0 10px rgba(18, 18, 18, 0.15);
+		border: 1px solid #3373ea;
 		z-index: 120;
 		cursor: pointer;
-		&.fixed {
-			position: absolute;
-			bottom: 132px;
-		}
+		transition: all 0.3s ease-in-out;
 		svg {
-			stroke: #898989;
+			display: block;
+			fill: #366fea;
+			transform: rotate(180deg);
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover, &:active, &:focus {
+			background-color: #366fea;
+		}
+		&:hover svg,
+		&:active svg,
+		&:focus svg {
+			fill: #fff;
 		}
 	}
 }
@@ -413,6 +429,9 @@ body.scroll-top-active .page-header__scroll-up {
 				height: 52px;
 			}
 		}
+		&__scroll-up {
+			display: none;
+		}
 	}
 }
 
@@ -434,6 +453,9 @@ body.scroll-top-active .page-header__scroll-up {
 			padding-top: 12px;
 			padding-bottom: 13px;
 			font-size: 16px;
+		}
+		&__scroll-up {
+			display: none;
 		}
 	}
 }

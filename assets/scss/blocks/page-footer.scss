@@ -574,6 +574,30 @@
 				width: 21px;
 				height: 18px;
 			}
+			svg.icon--in {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--facebook {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--twitter {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--reddit {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--instagram {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--youtube {
+				width: 35px;
+				height: 35px;
+			}			
 		}
 		&__contacts-social ul li:not(:nth-child(3n)) {
 			margin-right: 0;
@@ -629,32 +653,6 @@
 	.page-footer {
 		&__codes-inner {
 			max-width: 280px;
-		}
-		&__contacts-social ul li a {
-			svg.icon--in {
-				width: 35px;
-				height: 35px;
-			}
-			svg.icon--facebook {
-				width: 35px;
-				height: 35px;
-			}
-			svg.icon--twitter {
-				width: 35px;
-				height: 35px;
-			}
-			svg.icon--reddit {
-				width: 35px;
-				height: 35px;
-			}
-			svg.icon--instagram {
-				width: 35px;
-				height: 35px;
-			}
-			svg.icon--youtube {
-				width: 35px;
-				height: 35px;
-			}
 		}
 	}
 }
