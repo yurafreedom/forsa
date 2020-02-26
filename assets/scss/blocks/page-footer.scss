@@ -372,13 +372,6 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	&__author-title {
-		display: block;
-		font-size: 18px;
-		font-weight: 600;
-		line-height: 1.2;
-		color: #282828;
-	}
 	&__nav-mobile-block {
 		display: none;
 	}
@@ -399,7 +392,7 @@
 			fill: #5388ff;
 		}
 	}
-	&__nav-title {
+	&__nav-card &__nav-title {
 		display: block;
 		font-size: 16px;
 		font-weight: 600;
@@ -597,9 +590,6 @@
 			display: block;
 			margin-bottom: 45px;
 		}
-		&__bottom-wrapper &__author-title {
-			display: none;
-		}
 		&__logo {
 			display: none;
 		}
@@ -630,12 +620,41 @@
 				margin-left: 0;
 				font-size: 15px;
 				font-weight: 400;
-				max-width: 200px;
 			}
 		}
-		&__copyright-mobile-block &__author-title {
-			font-size: 15px;
-			font-weight: 400;
+	}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.page-footer {
+		&__codes-inner {
+			max-width: 280px;
+		}
+		&__contacts-social ul li a {
+			svg.icon--in {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--facebook {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--twitter {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--reddit {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--instagram {
+				width: 35px;
+				height: 35px;
+			}
+			svg.icon--youtube {
+				width: 35px;
+				height: 35px;
+			}
 		}
 	}
 }
@@ -705,9 +724,6 @@
 		&__bottom-nav ul li:not(:last-child) {
 			margin-right: 20px;
 		}
-		&__author-title {
-			font-size: 16px;
-		}
 		&__contacts-block {
 			margin-right: 50px;
 		}
@@ -716,7 +732,13 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
 	.page-footer {
-
+		&__top-content {
+			max-width: 992px;
+			margin: 0 auto;
+		}
+		&__support-block {
+			margin-right: 50px;
+		}
 	}
 }
 

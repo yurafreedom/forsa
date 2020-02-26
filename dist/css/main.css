@@ -7480,12 +7480,6 @@ main {
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .page-footer__author-title {
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #282828; }
   .page-footer__nav-mobile-block {
     display: none; }
   .page-footer__nav-card {
@@ -7506,7 +7500,7 @@ main {
     padding-right: 20px; }
     .page-footer__nav-heading svg {
       fill: #5388ff; }
-  .page-footer__nav-title {
+  .page-footer__nav-card .page-footer__nav-title {
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -7668,8 +7662,6 @@ main {
     .page-footer__bottom-wrapper {
       display: block;
       margin-bottom: 45px; }
-    .page-footer__bottom-wrapper .page-footer__author-title {
-      display: none; }
     .page-footer__logo {
       display: none; }
     .page-footer__copyright-block {
@@ -7697,11 +7689,29 @@ main {
       .page-footer__copyright-mobile-block span {
         margin-left: 0;
         font-size: 15px;
-        font-weight: 400;
-        max-width: 200px; }
-    .page-footer__copyright-mobile-block .page-footer__author-title {
-      font-size: 15px;
-      font-weight: 400; } }
+        font-weight: 400; } }
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .page-footer__codes-inner {
+    max-width: 280px; }
+  .page-footer__contacts-social ul li a svg.icon--in {
+    width: 35px;
+    height: 35px; }
+  .page-footer__contacts-social ul li a svg.icon--facebook {
+    width: 35px;
+    height: 35px; }
+  .page-footer__contacts-social ul li a svg.icon--twitter {
+    width: 35px;
+    height: 35px; }
+  .page-footer__contacts-social ul li a svg.icon--reddit {
+    width: 35px;
+    height: 35px; }
+  .page-footer__contacts-social ul li a svg.icon--instagram {
+    width: 35px;
+    height: 35px; }
+  .page-footer__contacts-social ul li a svg.icon--youtube {
+    width: 35px;
+    height: 35px; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-footer {
@@ -7754,10 +7764,15 @@ main {
       font-size: 16px; }
     .page-footer__bottom-nav ul li:not(:last-child) {
       margin-right: 20px; }
-    .page-footer__author-title {
-      font-size: 16px; }
     .page-footer__contacts-block {
       margin-right: 50px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .page-footer__top-content {
+    max-width: 992px;
+    margin: 0 auto; }
+  .page-footer__support-block {
+    margin-right: 50px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .page-footer {
