@@ -289,7 +289,7 @@ main {
 	}
 	.stats-block {
 		padding-top: 95px;
-		padding-bottom: 95px;
+		padding-bottom: 50px;
 		&__section-title {
 			display: none;
 		}
@@ -623,6 +623,8 @@ main {
 			}
 		}
 		&__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
 			&:not(:last-child) {
 				margin-bottom: 100px;
 			}

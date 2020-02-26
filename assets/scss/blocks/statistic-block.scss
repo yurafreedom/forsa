@@ -175,10 +175,17 @@
 	}
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1339px) {
+@include for-size(desktop) {
 	.statistic-block {
 		&__title {
 			font-size: 34px;
+		}
+		&__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__list {
+			justify-content: center;
 		}
 		&__card {
 			max-width: 180px;

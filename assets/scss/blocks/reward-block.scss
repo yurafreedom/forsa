@@ -168,8 +168,8 @@
 
 @include for-size(mobile) {
 	.reward-block {
-		padding-bottom: 140px;
-		padding-bottom: 70px;
+		padding-top: 45px;
+		padding-bottom: 50px;
 		&__diagram-photo {
 			img.desktop {
 				display: none;
@@ -368,10 +368,8 @@
 		}
 		&__diagram-invest-block {
 			top: -40px;
-			right: -15px;
 		}
 		&__diagram-develop-block {
-			right: -15px;
 			bottom: -110px;
 		}
 	}

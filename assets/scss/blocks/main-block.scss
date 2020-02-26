@@ -20,7 +20,6 @@
 		width: 100vw;
 		min-height: 1331px;
 		background-repeat: no-repeat;
-		background-size: contain;
 		background-position: center top;
 	}
 	&__content-block {
@@ -118,7 +117,17 @@
 			height: 11px;
 		}
 	}
+	#main_slider .swiper-slide {
+
+	}
 }
+
+// @keyframes fade {
+// 	0% {opacity: 0}
+// 	33.333% { opacity: 1}
+// 	66.666% { opacity: 0}
+// 	100% { opacity: 1}
+// }
 
 @include for-size(mobile) {
 	.main-block {

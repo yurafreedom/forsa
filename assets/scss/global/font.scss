@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: 'MyriadPro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: local('MyriadPro SemiBold'), local('MyriadPro-SemiBold'),
+        url('../fonts/MyriadPro-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/MyriadPro-SemiBold.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 700;

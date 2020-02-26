@@ -438,8 +438,12 @@ body.scroll-top-active .page-header__scroll-up {
 	}
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1439px) {
+@include for-size(desktop) {
 	.page-header {
+		&__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 		&__nav ul li:not(:last-child) {
 			margin-right: 25px;
 		}

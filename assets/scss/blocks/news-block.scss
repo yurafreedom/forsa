@@ -408,6 +408,10 @@
 	.news-block {
 		padding-top: 50px;
 		padding-bottom: 50px;
+		&__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 		&__section-title {
 			display: none;
 		}

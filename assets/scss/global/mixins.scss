@@ -26,7 +26,6 @@
 	padding-bottom: 6px;
 	width: 100%;
 	background-color: #fff;
-
 	&:-moz-placeholder {
 		color: #879ea7;
 	}
@@ -89,10 +88,7 @@
 		text-decoration: none;
 	}
 	&:active, &:focus {
-		box-shadow: none;
-	}
-	&:active {
-		background-color: #4842b4;
+		background: #4842b4;
 	}
 	&:active,
 	&:focus,
