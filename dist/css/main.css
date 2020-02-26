@@ -3151,7 +3151,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 
 #jq-dropdown-1.jq-dropdown, #jq-dropdown-2.jq-dropdown, #jq-dropdown-3.jq-dropdown,
 #jq-dropdown-4.jq-dropdown, #jq-dropdown-6.jq-dropdown {
-  display: block;
+  display: block !important;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease-in-out; }
@@ -3842,7 +3842,10 @@ body.scroll-top-active .page-header__scroll-up {
       color: #4db4e4; }
   .main-block__about-toggle {
     position: relative;
-    display: block; }
+    display: block;
+    -webkit-animation: move 3s infinite;
+            animation: move 3s infinite;
+    transition: all 0.3s ease-in-out; }
     .main-block__about-toggle svg {
       display: block;
       fill: #4db4e4;
@@ -3852,6 +3855,38 @@ body.scroll-top-active .page-header__scroll-up {
   .main-block #main_slider .swiper-slide {
     transition-duration: 5s !important;
     transition: visibility 0s 5s, opacity 5s linear !important; }
+
+@-webkit-keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); } }
+
+@keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); } }
 
 @media (max-width: 767px) {
   .main-block__slide {
@@ -7449,19 +7484,9 @@ main {
     line-height: 1.2; }
   .page-footer__bottom-part {
     position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
     padding-top: 40px;
     padding-bottom: 50px;
-    background: #fff;
-    padding-left: 15px;
-    padding-right: 15px; }
+    background: #fff; }
   .page-footer__copyright-block {
     display: -ms-flexbox;
     display: flex;
@@ -7515,7 +7540,9 @@ main {
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
   .page-footer__nav-mobile-block {
     display: none; }
   .page-footer__nav-card {
@@ -7714,16 +7741,18 @@ main {
       padding-top: 45px;
       padding-bottom: 0; }
     .page-footer__bottom-wrapper {
-      display: block;
-      margin-bottom: 45px; }
+      display: block; }
     .page-footer__logo {
       display: none; }
     .page-footer__copyright-block {
       display: none; }
+    .page-footer__bottom-nav {
+      margin-bottom: 45px; }
     .page-footer__bottom-nav ul {
       display: block; }
     .page-footer__bottom-nav ul li:not(:last-child) {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-right: 0; }
     .page-footer__bottom-nav ul li a {
       font-size: 16px; }
     .page-footer__copyright-mobile-block {
@@ -7736,10 +7765,10 @@ main {
       padding-top: 45px;
       padding-bottom: 45px;
       background-color: #f1f1f1;
-      margin-left: -15px;
-      margin-right: -15px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      margin-left: -15px;
+      margin-right: -15px; }
       .page-footer__copyright-mobile-block span {
         margin-left: 0;
         font-size: 15px;
@@ -7792,10 +7821,10 @@ main {
     .page-footer__bottom-part {
       display: block; }
     .page-footer__bottom-wrapper {
+      display: block; }
+    .page-footer__bottom-nav ul {
       -ms-flex-pack: center;
           justify-content: center; }
-    .page-footer__bottom-nav {
-      margin-right: 30px; }
     .page-footer__bottom-nav ul li a {
       font-size: 16px; }
     .page-footer__bottom-nav ul li:not(:last-child) {
@@ -7834,6 +7863,10 @@ main {
       padding-right: 15px; }
     .page-footer__nav-block ul li a {
       font-size: 16px; } }
+
+@media screen and (min-width: 1920px) {
+  .page-footer {
+    background-size: 100% auto; } }
 
 body {
   position: relative;

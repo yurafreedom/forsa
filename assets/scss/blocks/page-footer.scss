@@ -307,15 +307,9 @@
 	}
 	&__bottom-part {
 		position: relative;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
 		padding-top: 40px;
 		padding-bottom: 50px;
 		background: #fff;
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 	&__copyright-block {
 		display: flex;
@@ -371,6 +365,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	}
 	&__nav-mobile-block {
 		display: none;
@@ -612,7 +607,6 @@
 		}
 		&__bottom-wrapper {
 			display: block;
-			margin-bottom: 45px;
 		}
 		&__logo {
 			display: none;
@@ -620,11 +614,15 @@
 		&__copyright-block {
 			display: none;
 		}
+		&__bottom-nav {
+			margin-bottom: 45px;
+		}
 		&__bottom-nav ul {
 			display: block;
 		}
 		&__bottom-nav ul li:not(:last-child) {
 			margin-bottom: 20px;
+			margin-right: 0;
 		}
 		&__bottom-nav ul li a {
 			font-size: 16px;
@@ -636,10 +634,10 @@
 			padding-top: 45px;
 			padding-bottom: 45px;
 			background-color: #f1f1f1;
-			margin-left: -15px;
-			margin-right: -15px;
 			padding-left: 15px;
 			padding-right: 15px;
+			margin-left: -15px;
+			margin-right: -15px;
 			span {
 				margin-left: 0;
 				font-size: 15px;
@@ -711,10 +709,10 @@
 			display: block;
 		}
 		&__bottom-wrapper {
-			justify-content: center;
+			display: block;
 		}
-		&__bottom-nav {
-			margin-right: 30px;
+		&__bottom-nav ul {
+			justify-content: center;
 		}
 		&__bottom-nav ul li a {
 			font-size: 16px;
@@ -772,6 +770,10 @@
 	}
 }
 
-
+@media screen and (min-width: 1920px) {
+	.page-footer {
+		background-size: 100% auto;
+	}
+}
 
 
