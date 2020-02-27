@@ -180,9 +180,6 @@ $(document).ready(function () {
         loop: true,
         speed: 3000,
         effect: "fade",
-        // fadeEffect: {
-        //   crossFade: true
-        // },
         autoplay: {
           enabled: true,
           delay: 5000,
