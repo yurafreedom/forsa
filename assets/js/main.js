@@ -178,11 +178,11 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 0,
         loop: true,
-        speed: 3000,
+        speed: 1000,
         effect: "fade",
         autoplay: {
           enabled: true,
-          delay: 5000,
+          delay: 30000,
         },
       });
       $(window).resize(function() {
@@ -378,7 +378,7 @@ $('[data-toggle="anchor"]').click(function(e) {
 
   $('html,body').animate({
   scrollTop: targetPos
-  }, 800);
+  }, 2000);
 });
 
 $(window).scroll(function() {

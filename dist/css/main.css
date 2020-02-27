@@ -6448,6 +6448,38 @@ body.scroll-top-active .page-header__scroll-up {
       fill: #4db4e4;
       transition: all 0.3s ease-in-out; }
 
+@-webkit-keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); } }
+
+@keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); } }
+
 @media (max-width: 767px) {
   .main-block__slide {
     min-height: 600px;

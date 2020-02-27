@@ -121,6 +121,24 @@
 	}
 }
 
+@keyframes move {
+	25% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	67% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+}
+
 @include for-size(mobile) {
 	.main-block {
 		&__slide {
