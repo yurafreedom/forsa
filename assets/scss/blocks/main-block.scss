@@ -119,31 +119,6 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
-	#main_slider .swiper-wrapper {
-		transition-timing-function: ease-in-out !important;
-	}
-	#main_slider .swiper-slide {
-		transition-duration: 5s !important;
-		transition: visibility 0s 5s, opacity 5s linear !important;
-	}
-}
-
-@keyframes move {
-	25% {
-		opacity: 1;
-	}
-	33% {
-		opacity: 1;
-		transform: translateY(30px);
-	}
-	67% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(30px);
-	}
 }
 
 @include for-size(mobile) {

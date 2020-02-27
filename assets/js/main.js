@@ -180,9 +180,9 @@ $(document).ready(function () {
         loop: true,
         speed: 3000,
         effect: "fade",
-        fadeEffect: {
-          crossFade: true
-        },
+        // fadeEffect: {
+        //   crossFade: true
+        // },
         autoplay: {
           enabled: true,
           delay: 5000,
@@ -389,3 +389,5 @@ $(window).scroll(function() {
         t = 300;
     $(this).scrollTop() > e && !$("body").hasClass("scrolled") ? $("body").addClass("scrolled") : $(this).scrollTop() <= e && $("body").hasClass("scrolled") && $("body").removeClass("scrolled"), $(this).scrollTop() > t && !$("body").hasClass("menu-fixed") ? $("body").addClass("menu-fixed") : $(this).scrollTop() <= t && $("body").hasClass("menu-fixed") && $("body").removeClass("menu-fixed")
 });
+
+$('#main_slider .swiper-slide').addClass('fadeOut');
