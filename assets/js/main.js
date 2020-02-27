@@ -371,6 +371,20 @@ $('.page-header__nav-link--fifth').mouseout(function() {
   $('#jq-dropdown-6').removeClass('active');
 });
 
-$('.page-header__toggle-language').mouseover(function() {
 
+$('[data-toggle="anchor"]').click(function(e) {
+  e.preventDefault();
+  
+  var dataTarget = $(this).attr('data-target'),
+  targetPos = $(dataTarget).offset().top;
+
+  $('html,body').animate({
+  scrollTop: targetPos
+  }, 800);
+});
+
+$(window).scroll(function() {
+    var e = 200,
+        t = 300;
+    $(this).scrollTop() > e && !$("body").hasClass("scrolled") ? $("body").addClass("scrolled") : $(this).scrollTop() <= e && $("body").hasClass("scrolled") && $("body").removeClass("scrolled"), $(this).scrollTop() > t && !$("body").hasClass("menu-fixed") ? $("body").addClass("menu-fixed") : $(this).scrollTop() <= t && $("body").hasClass("menu-fixed") && $("body").removeClass("menu-fixed")
 });

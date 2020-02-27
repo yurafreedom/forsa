@@ -3313,6 +3313,16 @@ body.scroll-top-active .page-header__scroll-up {
   opacity: 1;
   pointer-events: all; }
 
+body.scrolled.menu-fixed .page-header__bottom-part {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #3c2875; }
+
 .page-header {
   width: 100%;
   position: absolute;
