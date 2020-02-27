@@ -10,6 +10,7 @@
 	&__card-block {
 		position: relative;
 		display: block;
+		flex-shrink: 0;
 	}
 	&__title {
 		display: block;
@@ -109,16 +110,17 @@
 			margin-bottom: 2px;
 		}
 	}
-	&__card-block.first &__card-heading-title {
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
-	}
 	&__card-block.first {
-		top: -10px;
+		top: 10px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-radius: 5px;
+		width: 267px;
 		background: linear-gradient(to top, #564ae2, #2484ee);
+	}
+	&__card-block.first &__card-heading-title {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
 	}
 	&__card-block.first &__card-heading-title {
 		background: 0;
@@ -131,6 +133,9 @@
 		&.active {
 			display: block;
 		}
+	}
+	#competitors_slider .swiper-slide:first-child {
+		display: none;
 	}
 }
 
@@ -180,6 +185,15 @@
 		#competitors_slider.swiper-container {
 			max-width: 140px;
 		}
+		#competitors_slider .swiper-slide:first-child {
+			display: block;
+		}
+		&__slider-wrapper &__card-block.first {
+			display: block !important;
+			width: auto;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
 		&__card-heading, &__card-inner-value {
 			max-width: 140px;
 		}
@@ -226,6 +240,9 @@
 				border-bottom-left-radius: 5px;
 			}
 		}
+		&__wrapper &__card-block.first {
+			display: none;
+		}
 	}
 }
 
@@ -270,7 +287,7 @@
 			width: 250px !important;
 		}
 		#competitors_slider.swiper-container {
-			max-width: 500px;
+			max-width: 250px;
 		}
 		&__card-heading, &__card-inner-value {
 			max-width: 250px;
@@ -324,7 +341,7 @@
 			}
 		}
 		#competitors_slider.swiper-container {
-			max-width: 750px;
+			max-width: 500px;
 		}
 		&__card-heading-title {
 			padding-top: 15px;

@@ -231,6 +231,7 @@ $(document).ready(function () {
       var competitorSwiper = new Swiper ('#competitors_slider', {
         slidesPerView: 'auto',
         speed: 1000,
+        initialSlide: 1,
         navigation: {
           nextEl: '.competitor-button-next',
           prevEl: '.competitor-button-prev',

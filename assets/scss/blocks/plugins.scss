@@ -9,7 +9,7 @@
 
 #competitors_slider.swiper-container {
   margin: 0!important;
-  max-width: 1068px;
+  max-width: 801px;
 }
 
 .banner-button-prev, .banner-button-next {
@@ -70,7 +70,7 @@
   height: 59px;
   border-radius: 50%;
   background: linear-gradient(to top, #564ae2, #2484ee);
-  z-index: 100;
+  z-index: 10;
   &:hover {
     background: linear-gradient(to top, #2f97f0, #473dbe);
   }
@@ -129,7 +129,7 @@
   height: 59px;
   border-radius: 50%;
   border: 1px solid transparent;
-  z-index: 100;
+  z-index: 10;
 }
 
 .team-button-prev, .adviser-button-prev,

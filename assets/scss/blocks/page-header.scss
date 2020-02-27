@@ -22,16 +22,6 @@ body.scroll-top-active .page-header__scroll-up {
 	pointer-events: all;
 }
 
-body.scrolled.menu-fixed .page-header__bottom-part {
-	position: fixed;
-	top: 0;
-	left: 0;
-	transform: translateY(0);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #3c2875;
-}
-
 .page-header {
 	width: 100%;
 	position: absolute;
@@ -200,7 +190,7 @@ body.scrolled.menu-fixed .page-header__bottom-part {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		overflow-y: auto;
 		transform: translateX(-100%);
 		display: flex;
@@ -405,6 +395,16 @@ body.scrolled.menu-fixed .page-header__bottom-part {
 }
 
 @include for-size(mobile) {
+	body.scrolled.menu-fixed .page-header__bottom-part {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform: translateY(0);
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #3c2875;
+	}
 	.page-header {
 		&__toggle {
 			display: block;

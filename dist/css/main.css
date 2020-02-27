@@ -2967,7 +2967,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 
 #competitors_slider.swiper-container {
   margin: 0 !important;
-  max-width: 1068px; }
+  max-width: 801px; }
 
 .banner-button-prev, .banner-button-next {
   position: absolute;
@@ -3021,7 +3021,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   height: 59px;
   border-radius: 50%;
   background: linear-gradient(to top, #564ae2, #2484ee);
-  z-index: 100; }
+  z-index: 10; }
   .competitor-button-prev:hover, .competitor-button-next:hover {
     background: linear-gradient(to top, #2f97f0, #473dbe); }
   .competitor-button-prev:active, .competitor-button-prev:focus, .competitor-button-next:active, .competitor-button-next:focus {
@@ -3072,7 +3072,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   height: 59px;
   border-radius: 50%;
   border: 1px solid transparent;
-  z-index: 100; }
+  z-index: 10; }
 
 .team-button-prev, .adviser-button-prev,
 .cooperation-button-prev {
@@ -3313,16 +3313,6 @@ body.scroll-top-active .page-header__scroll-up {
   opacity: 1;
   pointer-events: all; }
 
-body.scrolled.menu-fixed .page-header__bottom-part {
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #3c2875; }
-
 .page-header {
   width: 100%;
   position: absolute;
@@ -3494,7 +3484,7 @@ body.scrolled.menu-fixed .page-header__bottom-part {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -3688,6 +3678,16 @@ body.scrolled.menu-fixed .page-header__bottom-part {
       fill: #fff; }
 
 @media (max-width: 767px) {
+  body.scrolled.menu-fixed .page-header__bottom-part {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c2875; }
   .page-header__toggle {
     display: block; }
   .page-header__nav {
@@ -5531,7 +5531,8 @@ main {
     .reward-block__diagram-invest-title {
       margin-bottom: 60px; }
     .reward-block__diagram-invest-text {
-      max-width: 200px; }
+      max-width: 200px;
+      margin-left: auto; }
     .reward-block__diagram-invest-block {
       top: -40px;
       right: 0;
@@ -5580,7 +5581,9 @@ main {
         align-items: flex-end; }
   .competitors-block__card-block {
     position: relative;
-    display: block; }
+    display: block;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .competitors-block__title {
     display: block;
     text-align: center;
@@ -5673,15 +5676,16 @@ main {
       font-size: 17px; }
     .competitors-block__card-inner-value:not(:last-child) {
       margin-bottom: 2px; }
-  .competitors-block__card-block.first .competitors-block__card-heading-title {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px; }
   .competitors-block__card-block.first {
-    top: -10px;
+    top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
+    width: 267px;
     background: linear-gradient(to top, #564ae2, #2484ee); }
+  .competitors-block__card-block.first .competitors-block__card-heading-title {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
   .competitors-block__card-block.first .competitors-block__card-heading-title {
     background: 0; }
   .competitors-block__card-block.first .competitors-block__card-inner-value {
@@ -5690,6 +5694,8 @@ main {
     display: none; }
     .competitors-block .competitor-button-prev.active {
       display: block; }
+  .competitors-block #competitors_slider .swiper-slide:first-child {
+    display: none; }
 
 @media (max-width: 767px) {
   .competitors-block {
@@ -5728,6 +5734,13 @@ main {
       width: 140px !important; }
     .competitors-block #competitors_slider.swiper-container {
       max-width: 140px; }
+    .competitors-block #competitors_slider .swiper-slide:first-child {
+      display: block; }
+    .competitors-block__slider-wrapper .competitors-block__card-block.first {
+      display: block !important;
+      width: auto;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
     .competitors-block__card-heading, .competitors-block__card-inner-value {
       max-width: 140px; }
     .competitors-block__card-heading-title {
@@ -5761,7 +5774,9 @@ main {
       .competitors-block__points-title:first-child {
         border-top-left-radius: 5px; }
       .competitors-block__points-title:last-child {
-        border-bottom-left-radius: 5px; } }
+        border-bottom-left-radius: 5px; }
+    .competitors-block__wrapper .competitors-block__card-block.first {
+      display: none; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .competitors-block {
@@ -5796,7 +5811,7 @@ main {
     .competitors-block #competitors_slider .swiper-slide {
       width: 250px !important; }
     .competitors-block #competitors_slider.swiper-container {
-      max-width: 500px; }
+      max-width: 250px; }
     .competitors-block__card-heading, .competitors-block__card-inner-value {
       max-width: 250px; }
     .competitors-block__card-heading-title {
@@ -5832,7 +5847,7 @@ main {
       width: 10px;
       height: 14px; }
   .competitors-block #competitors_slider.swiper-container {
-    max-width: 750px; }
+    max-width: 500px; }
   .competitors-block__card-heading-title {
     padding-top: 15px;
     padding-bottom: 15px; }
@@ -6016,7 +6031,8 @@ main {
     color: #fff; }
     .shard-block__honeycombs-option.first {
       top: 65px;
-      left: 120px; }
+      left: 120px;
+      color: rgba(255, 255, 255, 0.4); }
     .shard-block__honeycombs-option.second {
       left: 360px; }
     .shard-block__honeycombs-option.third {
@@ -6036,7 +6052,8 @@ main {
       left: 430px; }
     .shard-block__honeycombs-option.eighth {
       top: 310px;
-      left: 570px; }
+      left: 570px;
+      color: rgba(255, 255, 255, 0.4); }
 
 @media (max-width: 767px) {
   .shard-block {
@@ -6728,12 +6745,18 @@ main {
     font-size: 25px;
     font-weight: 600;
     color: #fff;
-    line-height: 1.2; }
+    line-height: 1.2;
+    transition: all 0.3s ease-in-out; }
+    .team-block__name::selection {
+      color: #fff; }
   .team-block__position {
     display: block;
     font-size: 20px;
     font-weight: 400;
-    color: #fff; }
+    color: #fff;
+    transition: all 0.3s ease-in-out; }
+    .team-block__position::selection {
+      color: #fff; }
   .team-block__members {
     display: none; }
   .team-block #team_slider .swiper-slide {

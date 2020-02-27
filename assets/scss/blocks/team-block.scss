@@ -117,12 +117,20 @@
 		font-weight: 600;
 		color: #fff;
 		line-height: 1.2;
+		transition: all 0.3s ease-in-out;
+		&::selection {
+			color: #fff;
+		}
 	}
 	&__position {
 		display: block;
 		font-size: 20px;
 		font-weight: 400;
 		color: #fff;
+		transition: all 0.3s ease-in-out;
+		&::selection {
+			color: #fff;
+		}
 	}
 	&__members {
 		display: none;
