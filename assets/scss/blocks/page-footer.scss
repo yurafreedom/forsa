@@ -9,7 +9,7 @@
 		position: relative;
 		display: block;
 		padding-top: 138px;
-		padding-bottom: 140px;
+		padding-bottom: 130px;
 	}
 	&__nav-wrapper {
 		position: relative;
@@ -447,9 +447,10 @@
 		&__support-block {
 			display: flex;
 			flex-direction: row-reverse;
-			justify-content: center;
+			justify-content: flex-end;
 			align-items: center;
-			margin-bottom: 55px;
+			width: 100%;
+			margin-bottom: 57px;
 			.btn {
 				width: 117px;
 				padding-top: 10px;
@@ -464,7 +465,7 @@
 		&__support-photo {
 			width: 118px;
 			height: 118px;
-			margin-right: 30px;
+			margin-right: 35px;
 		}
 		&__nav-wrapper {
 			display: none;
@@ -472,7 +473,7 @@
 		&__nav-mobile-block {
 			position: relative;
 			display: block;
-			padding-top: 45px;
+			padding-top: 34px;
 			padding-bottom: 35px;
 			margin-left: -15px;
 			margin-right: -15px;
@@ -480,13 +481,17 @@
 		}
 		&__top-part {
 			padding-top: 0;
-			padding-bottom: 60px;
+			padding-bottom: 38px;
 		}
 		&__top-content {
 			justify-content: center;
 		}
 		&__nav-title {
 			margin-bottom: 0;
+		}
+		&__nav-heading {
+			padding-top: 12px;
+			padding-bottom: 12px;
 		}
 		&__top-content {
 			padding-top: 50px;
@@ -522,7 +527,7 @@
 		}
 		&__contacts-title {
 			font-size: 23px;
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 		}
 		&__contacts-mail {
 			font-size: 15px;
@@ -538,6 +543,9 @@
 			&:first-child svg {
 				width: 24px;
 				height: 26px;
+			}
+			&:last-child svg {
+				width: 20px;
 			}
 			&:not(:last-child) {
 				margin-right: 16px;
@@ -561,6 +569,9 @@
 		}
 		&__contacts-social ul {
 			justify-content: center;
+		}
+		&__contacts-social ul li {
+			margin-bottom: 20px;
 		}
 		&__contacts-social ul li a {
 			width: 36px;
@@ -621,7 +632,7 @@
 			display: block;
 		}
 		&__bottom-nav ul li:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 			margin-right: 0;
 		}
 		&__bottom-nav ul li a {
@@ -631,7 +642,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			padding-top: 45px;
+			padding-top: 43px;
 			padding-bottom: 45px;
 			background-color: #f1f1f1;
 			padding-left: 15px;
@@ -642,6 +653,7 @@
 				margin-left: 0;
 				font-size: 15px;
 				font-weight: 400;
+				line-height: 1.35;
 			}
 		}
 	}

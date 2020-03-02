@@ -1,6 +1,7 @@
 .shard-block {
-	padding-top: 80px;
+	padding-top: 265px;
 	padding-bottom: 150px;
+	overflow: hidden;
 	&__wrapper {
 		position: relative;
 		display: flex;
@@ -18,7 +19,7 @@
 		top: 170px;
 		bottom: auto;
 		width: 9px;
-		left: -130px;
+		left: -150px;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 1;
@@ -41,7 +42,7 @@
 		span {
 			position: relative;
 			display: block;
-			bottom: 70px;
+			bottom: 60px;
 			transform: rotate(-90deg);
 		}
 		img {
@@ -57,15 +58,16 @@
 		font-size: 40px;
 		font-weight: 700;
 		color: #fff;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
 	&__text {
 		display: block;
 		font-size: 20px;
 		font-weight: 400;
 		color: #fff;
-		p {
-			margin-bottom: 40px;
+		line-height: 1.4;
+		p:not(:last-child) {
+			margin-bottom: 35px;
 		}
 	}
 	&__honeycombs-block {
@@ -77,12 +79,12 @@
 	}
 	&__honeycombs-photo {
 		position: absolute;
-		top: -200px;
-		right: 0;
+		top: -194px;
+		right: -34px;
 		display: block;
 		width: 808px;
 		height: 669px;
-		z-index: 10;
+		z-index: -1;
 		img {
 			display: block;
 			width: 100%;
@@ -93,7 +95,7 @@
 		position: absolute;
 		top: auto;
 		left: auto;
-		right: 0;
+		right: -13px;
 		bottom: 182px;
 		width: 9px;
 		font-size: 48px;
@@ -106,7 +108,7 @@
 			display: block;
 			left: auto;
 			right: 50px;
-			bottom: 80px;
+			bottom: 66px;
 			transform: rotate(90deg);
 		}
 		b span {
@@ -118,8 +120,8 @@
 		}
 		p {
 			position: relative;
-			top: -145px;
-			left: -75px;
+			top: -134px;
+			left: -71px;
 			display: block;
 			transform: rotate(90deg);
 			font-size: 20px;
@@ -140,7 +142,7 @@
 		top: 0;
 		left: 0;
 		right: auto;
-		z-index: -1;
+		z-index: 1;
 	}
 	&__honeycombs-option {
 		position: absolute;
@@ -151,36 +153,37 @@
 		font-weight: 600;
 		color: #fff;
 		&.first {
-			top: 65px;
-			left: 120px;
+			top: 70px;
+			left: 155px;
 			color: rgba(255,255,255,0.4);
 		}
 		&.second {
-			left: 360px;
+			top: 7px;
+			left: 392px;
 		}
 		&.third {
-			top: 40px;
-			left: 500px;
+			top: 44px;
+			left: 530px;
 		}
 		&.fourth {
-			top: 100px;
-			left: 260px;
+			top: 106px;
+			left: 294px;
 		}
 		&.fifth {
-			top: 170px;
-			left: 565px;
+			top: 183px;
+			left: 596px;
 		}
 		&.sixth {
-			top: 240px;
-			left: 290px;
+			top: 246px;
+			left: 328px;
 		}
 		&.seventh {
-			top: 280px;
-			left: 430px;
+			top: 282px;
+			left: 465px;
 		}
 		&.eighth {
-			top: 310px;
-			left: 570px;
+			top: 318px;
+			left: 602px;
 			color: rgba(255,255,255,0.4);
 		}
 	}
@@ -200,12 +203,16 @@
 		&__title {
 			max-width: 100%;
 			font-size: 25px;
-			margin-bottom: 300px;
+			margin-bottom: 390px;
 		}
 		&__text {
 			font-size: 15px;
+			line-height: 1.3;
 			p {
-				margin-bottom: 20px;
+				margin-bottom: 0;
+			}
+			p:not(:last-child) {
+				margin-bottom: 17px;
 			}
 		}
 		&__honeycombs-block {
@@ -218,10 +225,10 @@
 			max-width: 350px;
 		}
 		&__honeycombs-photo {
-			top: 0;
-			width: 366px;
+			top: -34px;
+			width: 534px;
 			height: auto;
-			right: -110px;
+			right: -140px;
 			z-index: 1;
 		}
 		&__honeycombs-inner {
@@ -243,15 +250,15 @@
 			b {
 				left: 20px;
 				right: auto;
-				bottom: -34px;
+				bottom: -74px;
 				transform: rotate(-90deg);
 			}
 			b span {
 				top: -24px;
-				left: 75px;
+				left: 69px;
 			}
 			p {
-				top: -10px;
+				top: 30px;
 				left: 35px;
 				font-size: 16px;
 				transform: rotate(-90deg);
@@ -262,34 +269,35 @@
 			}
 		}
 		&__honeycombs-option {
-			font-size: 12px;
+			font-size: 15px;
 			&.first {
-				top: 90px;
-				left: 195px;
+				top: 97px;
+				left: 137px;
 			}
 			&.second {
 				display: none;
 			}
 			&.third {
-				top: 110px;
-				left: 262px;
+				top: 125px;
+				left: 232px;
 			}
 			&.fourth {
-				top: 140px;
-				left: 148px;
+				top: 166px;
+				left: 70px;
 			}
 			&.fifth {
-				top: 200px;
-				left: 180px;
+				top: 261px;
+				left: 105px;
+				font-size: 16px;
 			}
 			&.sixth {
-				top: 215px;
+				top: 214px;
 				left: auto;
-				right: 4px;
+				right: -40px;
 			}
 			&.seventh {
-				top: 170px;
-				left: 272px;
+				top: 284px;
+				left: 188px;
 			}
 			&.eighth {
 				display: none;
@@ -298,27 +306,51 @@
 	}
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 374px) {
 	.shard-block {
-		&__honeycombs-photo {
-			right: -56px;
-		}
 		&__honeycombs-option {
+			&.first {
+				left: 175px;
+			}
 			&.third {
-				left: 258px;
+				left: 265px;
+			}
+			&.fourth {
+				left: 110px;
+			}
+			&.fifth {
+				left: 140px;
 			}
 			&.sixth {
-				top: 235px;
-				right: -6px;
+				right: -30px;
 			}
 			&.seventh {
-				left: 274px;
+				left: 225px;
 			}
-			&.eighth {
-				display: block;
-				left: auto;
-				top: 215px;
-				right: 55px;
+		}
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+	.shard-block {
+		&__honeycombs-option {
+			&.first {
+				left: 190px;
+			}
+			&.third {
+				left: 280px;
+			}
+			&.fourth {
+				left: 125px;
+			}
+			&.fifth {
+				left: 155px;
+			}
+			&.sixth {
+				right: -30px;
+			}
+			&.seventh {
+				left: 235px;
 			}
 		}
 	}
@@ -328,20 +360,17 @@
 	.shard-block {
 		&__honeycombs-option {
 			&.first {
-				left: 200px;
+				left: 195px;
 			}
 			&.third {
-				left: 262px;
+				left: 285px;
 			}
 			&.fourth {
-				left: 154px;
+				left: 130px;
 			}
 			&.seventh {
-				left: 278px;
+				left: 245px;
 			}
-		}
-		&__title {
-			margin-bottom: 330px;
 		}
 		&__content-block {
 			max-width: 100%;
@@ -351,6 +380,7 @@
 
 @include for-size(tablet) {
 	.shard-block {
+		padding-top: 150px;
 		padding-bottom: 75px;
 		&__section-title {
 			display: none;
@@ -370,6 +400,7 @@
 		}
 		&__honeycombs-photo {
 			top: 0;
+			right: 0;
 			width: 100%;
 		}
 		&__honeycombs-inner {

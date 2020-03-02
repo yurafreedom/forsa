@@ -8,7 +8,7 @@
 		font-weight: 700;
 		line-height: 1.2;
 		color: #00132e;
-		margin-bottom: 100px;
+		margin-bottom: 90px;
 	}
 	&__slider-wrapper {
 		position: relative;
@@ -103,8 +103,26 @@
 		display: block;
 		font-size: 20px;
 		font-weight: 400;
-		line-height: 1.2;
+		line-height: 1.4;
 		color: #282828;
+		height: 86px;
+		overflow: hidden;
+		transition: all 0.3s ease-in-out;
+		&.active {
+			height: auto;
+			overflow: visible;
+		}
+	}
+	&__read-link {
+		color: #5388ff;
+		transition: all 0.3s ease-in-out;
+		&.disabled {
+			display: none;
+		}
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+			color: darken(#5388ff, 15%);
+		}
 	}
 	&__inner-wrapper {
 		display: block;
@@ -145,12 +163,12 @@
 
 @include for-size(mobile) {
 	.team-block {
-		padding-top: 65px;
+		padding-top: 58px;
 		padding-bottom: 40px;
 		order: 3;
 		&__title {
 			font-size: 25px;
-			margin-bottom: 40px;
+			margin-bottom: 34px;
 		}
 		#team_slider.swiper-container,
 		#adviser_slider.swiper-container {
@@ -161,14 +179,15 @@
 			width: 280px !important;
 		}
 		&__photo-block {
-			margin-bottom: 20px;
+			margin-bottom: 17px;
 		}
 		&__text {
 			font-size: 15px;
+			line-height: 1.35;
 		}
 		&__slider-wrapper {
 			&:not(:last-child) {
-				margin-bottom: 80px;
+				margin-bottom: 86px;
 			}
 		}
 		&__social-block {
@@ -202,7 +221,7 @@
 		}
 		&__members {
 			display: block;
-			margin-top: 30px;
+			margin-top: 21px;
 			text-align: right;
 			font-size: 15px;
 			font-weight: 400;
@@ -218,7 +237,7 @@
 		padding-bottom: 50px;
 		#team_slider.swiper-container,
 		#adviser_slider.swiper-container {
-			max-width: 700px;
+			max-width: 640px;
 		}
 		#team_slider .swiper-slide,
 		#adviser_slider .swiper-slide {

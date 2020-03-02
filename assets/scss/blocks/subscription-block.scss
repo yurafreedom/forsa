@@ -2,7 +2,7 @@
 	position: relative;
 	background-color: #fff;
 	padding-top: 85px;
-	padding-bottom: 170px;
+	padding-bottom: 163px;
 	&__wrapper {
 		position: relative;
 		display: flex;
@@ -14,8 +14,8 @@
 		font-size: 40px;
 		font-weight: 700;
 		color: #00132e;
-		line-height: 1.2;
-		margin-bottom: 50px;
+		line-height: 1;
+		margin-bottom: 44px;
 	}
 	&__text {
 		display: block;
@@ -74,10 +74,12 @@
 		}
 		&__title {
 			font-size: 25px;
-			margin-bottom: 25px;
+			margin-bottom: 26px;
 		}
 		&__text {
 			font-size: 15px;
+			line-height: 1.3;
+			margin-bottom: 36px;
 		}
 		&__form {
 			display: block;
@@ -88,10 +90,10 @@
 		}
 		&__input {
 			width: 100%;
-			padding-top: 10px;
+			padding-top: 11px;
 			padding-bottom: 11px;
-			padding-left: 15px;
-			padding-right: 15px;
+			padding-left: 19px;
+			padding-right: 19px;
 			font-size: 15px;
 			&::placeholder {
 				font-size: 15px;
@@ -99,8 +101,9 @@
 		}
 		.btn--subscription {
 			width: 100%;
-			padding-top: 10px;
-			padding-bottom: 11px;
+			padding-top: 11px;
+			padding-bottom: 10px;
+			letter-spacing: 0;
 		}
 	}
 }

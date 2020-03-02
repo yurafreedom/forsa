@@ -15,7 +15,7 @@ main {
 		flex-direction: row;
 		justify-content: space-between;
 		&:not(:last-child) {
-			margin-bottom: 150px;
+			margin-bottom: 120px;
 		}
 	}
 	&__specification-block {
@@ -24,23 +24,28 @@ main {
 	}
 	&__section-title {
 		position: absolute;
-		top: 0;
+		top: 150px;
 		width: 9px;
-		left: -130px;
+		left: -150px;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 1;
 		text-transform: uppercase;
 		color: #8e71e0;
 		span {
+			position: relative;
+			top: -66px;
 			display: block;
 			transform: rotate(-90deg);
 		}
 		span.forsa {
 			position: relative;
+			top: 3px;
+			left: 2px;
 		}
 		span.stats {
 			position: relative;
+			left: 2px;
 			top: -108px;
 		}
 		img {
@@ -54,14 +59,14 @@ main {
 		display: block;
 		font-size: 40px;
 		font-weight: 700;
-		line-height: 1.5;
+		line-height: 1;
 		color: #fff;
-		margin-bottom: 45px;
+		margin-bottom: 50px;
 		z-index: 10;
 		&::before {
 			content: '01';
 			position: absolute;
-			top: -120px;
+			top: -88px;
 			left: -70px;
 			font-size: 130px;
 			font-weight: 700;
@@ -82,7 +87,7 @@ main {
 		font-weight: 400;
 		line-height: 1.1;
 		color: #fff;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 	}
 	&__option-value {
 		display: block;
@@ -154,9 +159,9 @@ main {
 		border-radius: 5px;
 		padding-left: 30px;
 		padding-right: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 		background: linear-gradient(to bottom, #2749b3, #213087);
-		margin-bottom: 34px;
+		margin-bottom: 31px;
 		&:not(:nth-child(2n)) {
 			margin-right: 34px;
 		}
@@ -170,7 +175,7 @@ main {
 		max-width: 337px;
 		height: 377px;
 		padding-left: 40px;
-		padding-bottom: 45px;
+		padding-bottom: 34px;
 		border-radius: 5px;
 		background: linear-gradient(to top, #564ae2, #2484ee);
 		z-index: 10;
@@ -224,12 +229,13 @@ main {
 		font-size: 28px;
 		font-weight: 700;
 		color: #fff;
-		line-height: 1.2;
+		line-height: 1;
 		b {
 			text-transform: uppercase;
 		}
 		span {
 			font-size: 18px;
+			text-transform: uppercase;
 		}
 	}
 	&__specification-card-value {
@@ -260,10 +266,13 @@ main {
 		display: block;
 	}
 	&__coin-block &__title {
+		position: relative;
+		margin-bottom: 45px;
+		top: -8px;
 		&::before {
 			content: '02';
-			top: -100px;
-			left: -80px;
+			top: -85px;
+			left: -75px;
 			color: #182e75;
 		}
 	}
@@ -272,10 +281,12 @@ main {
 		display: block;
 	}
 	&__cost-block &__title {
+		position: relative;
+		top: -4px;
 		&::before {
 			content: '03';
-			top: -100px;
-			left: -80px;
+			top: -88px;
+			left: -75px;
 			color: #182e75;
 		}
 	}
@@ -288,19 +299,22 @@ main {
 		background-size: cover;
 	}
 	.stats-block {
-		padding-top: 95px;
+		padding-top: 92px;
 		padding-bottom: 50px;
 		&__section-title {
 			display: none;
 		}
 		&__title {
 			font-size: 25px;
-			margin-bottom: 25px;
+			margin-bottom: 22px;
 			&::before {
-				top: -60px;
+				top: -46px;
 				left: 0;
 				font-size: 80px;
 			}
+		}
+		&__option:not(:last-child) {
+			margin-bottom: 25px;
 		}
 		&__wrapper {
 			display: block;
@@ -309,12 +323,12 @@ main {
 			max-width: 137px;
 		}
 		&__specification-card {
-			height: 70px;
-			max-width: 137px;
+			height: 66px;
+			max-width: 140px;
 			margin-bottom: 15px;
-			padding-left: 15px;
+			padding-left: 20px;
 			padding-right: 10px;
-			padding-bottom: 15px;
+			padding-bottom: 10px;
 			margin-bottom: 7px;
 			&:not(:nth-child(2n)) {
 				margin-right: 6px;
@@ -329,14 +343,14 @@ main {
 		}
 		&__specification-main-card {
 			height: 147px;
-			max-width: 137px;
+			max-width: 140px;
 			padding-left: 15px;
 			padding-right: 10px;
-			padding-bottom: 15px;
+			padding-bottom: 10px;
 			overflow: hidden;
 			margin-bottom: 7px;
 			&:not(:nth-child(2n)) {
-				margin-right: 6px;
+				margin-right: 10px;
 			}
 		}
 		&__specification-main-card.dark {
@@ -346,7 +360,7 @@ main {
 			}
 		}
 		&__list {
-			max-width: 422px;
+			max-width: 290px;
 		}
 		&__specification-main-card &__specification-card-title {
 			font-size: 18px;
@@ -355,7 +369,7 @@ main {
 			font-size: 14px;
 		}
 		&__option-title {
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 600;
 		}
 		&__option-value {
@@ -422,23 +436,24 @@ main {
 		}
 		&__wrapper {
 			&:not(:last-child) {
-				margin-bottom: 100px;
+				margin-bottom: 110px;
 			}
 		}
 		&__coin-block &__title {
+			margin-bottom: 12px;
 			&::before {
-				top: -60px;
+				top: -46px;
 				left: 0;
 			}
 		}
 		&__cost-block &__title {
 			&::before {
-				top: -60px;
+				top: -46px;
 				left: 0;
 			}
 		}
 		&__coin-block {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 		}
 		&__specification-card.logo {
 			&::before {
@@ -460,7 +475,7 @@ main {
 			margin: 0 auto;
 		}
 		&__specification-main-card, &__specification-card, &__specification-card-wrapper {
-			max-width: 190px;
+			max-width: 180px;
 		}
 	}
 }

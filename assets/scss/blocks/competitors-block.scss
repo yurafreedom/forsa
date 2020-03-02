@@ -1,5 +1,5 @@
 .competitors-block {
-	padding-top: 150px;
+	padding-top: 130px;
 	padding-bottom: 80px;
 	&__wrapper {
 		position: relative;
@@ -18,7 +18,7 @@
 		font-size: 40px;
 		font-weight: 700;
 		color: #fff;
-		margin-bottom: 115px;
+		margin-bottom: 80px;
 	}
 	&__points-block {
 		position: relative;
@@ -31,6 +31,7 @@
 		position: relative;
 		display: block;
 		width: 100%;
+		top: 15px;
 	}
 	&__points-title {
 		display: flex;
@@ -81,8 +82,8 @@
 		font-weight: 600;
 		line-height: 1.5;
 		color: #fff;
-		padding-top: 22px;
-		padding-bottom: 23px;		
+		padding-top: 20px;
+		padding-bottom: 21px;		
 		background-color: #282379;
 	}
 	&__card-inner {
@@ -111,11 +112,11 @@
 		}
 	}
 	&__card-block.first {
-		top: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		top: 20px;
+		padding-top: 11px;
+		padding-bottom: 11px;
 		border-radius: 5px;
-		width: 267px;
+		width: 255px;
 		background: linear-gradient(to top, #564ae2, #2484ee);
 	}
 	&__card-block.first &__card-heading-title {
@@ -141,18 +142,26 @@
 
 @include for-size(mobile) {
 	.competitors-block {
-		padding-top: 70px;
-		padding-bottom: 45px;
+		padding-top: 85px;
+		padding-bottom: 14px;
 		&__wrapper {
 			justify-content: center;
 		}
 		&__title {
 			font-size: 25px;
-			margin-bottom: 40px;
+			margin-bottom: 24px;
 			text-align: left;
 		}
 		&__points-block, &__points-title {
 			max-width: 140px;
+		}
+		&__points-inner {
+			top: 5px;
+		}
+		&__card-block.first {
+			top: -10px;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 		.competitor-button-prev, .competitor-button-next {
 			top: 321px;
@@ -368,7 +377,7 @@
 			max-width: 290px;
 		}
 		#competitors_slider.swiper-container {
-			max-width: 801px;
+			max-width: 510px;
 		}
 		&__card-heading-title {
 			padding-top: 15px;

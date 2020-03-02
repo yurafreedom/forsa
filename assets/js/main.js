@@ -228,7 +228,6 @@ $(document).ready(function () {
       var competitorSwiper = new Swiper ('#competitors_slider', {
         slidesPerView: 'auto',
         speed: 1000,
-        initialSlide: 1,
         navigation: {
           nextEl: '.competitor-button-next',
           prevEl: '.competitor-button-prev',
@@ -329,12 +328,16 @@ $('.page-footer__nav-heading').click( function () {
   $(this).toggleClass('in').next().stop().slideToggle(200).parent().toggleClass('active');
 });
 
-$('.page-header__nav-link--first').mouseover(function() {
-  $('#jq-dropdown-1').toggleClass('active');
+$('.goals-block__card-heading').click( function () {
+  $(this).toggleClass('in').next().stop().slideToggle(200).parent().toggleClass('active');
 });
 
-$('.page-header__nav-link--first').mouseout(function() {
-  $('#jq-dropdown-1').removeClass('active');
+$('.page-header__nav-link--first').mouseover(function() {
+  $('#jq-dropdown-1').addClass('active');
+});
+
+$('#jq-dropdown-1').mouseout(function() {
+  $(this).removeClass('active');
 });
 
 $('.page-header__nav-link--second').mouseover(function() {
@@ -362,13 +365,35 @@ $('.page-header__nav-link--fourth').mouseout(function() {
 });
 
 $('.page-header__nav-link--fifth').mouseover(function() {
-  $('#jq-dropdown-6').toggleClass('active');
+  $('#jq-dropdown-5').toggleClass('active');
 });
 
 $('.page-header__nav-link--fifth').mouseout(function() {
+  $('#jq-dropdown-5').removeClass('active');
+});
+
+$('.page-header__nav-link--sixth').mouseover(function() {
+  $('#jq-dropdown-6').toggleClass('active');
+});
+
+$('.page-header__nav-link--sixth').mouseout(function() {
   $('#jq-dropdown-6').removeClass('active');
 });
 
+$('.team-block__read-link').on('click', function() {
+  $(this).parents().addClass('active');
+  $(this).addClass('disabled');
+});
+
+$('.opportunity-block__link').on('click', function() {
+  $(this).parent().addClass('active');
+  $(this).addClass('disabled');
+});
+
+$('.news-block__read-link').on('click', function() {
+  $(this).parent().addClass('active');
+  $(this).addClass('disabled');
+});
 
 $('[data-toggle="anchor"]').click(function(e) {
   e.preventDefault();

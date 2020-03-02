@@ -1,0 +1,616 @@
+.goals-block {
+	padding-top: 165px;
+	padding-bottom: 372px;
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
+	&__heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+	&__title {
+		display: block;
+		font-size: 40px;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__controls-block {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 725px;
+	}
+	&__controls-block ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__controls-block ul li a {
+		display: block;
+		font-size: 20px;
+		line-height: 1.5;
+		color: #5388ff;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	&__roadmap-block {
+		position: relative;
+		display: block;
+	}
+	&__roadmap-photo {
+		position: relative;
+		display: block;
+		margin-bottom: 150px;
+		width: 100%;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		img.mobile {
+			display: none;
+		}
+	}
+	&__roadmap-inner {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		max-width: 1390px;
+		height: 100%;
+	}
+	&__roadmap-option {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 70px;
+		&.first {
+			top: auto;
+			left: 83px;
+			bottom: 0;
+		}
+		&.second {
+			top: 120px;
+			left: 467px;
+		}
+		&.third {
+			top: 48px;
+			left: auto;
+			right: 468px;
+		}
+		&.fourth {
+			top: 75px;
+			left: auto;
+			right: 82px;
+		}
+	}
+	&__roadmap-year {
+		display: block;
+		text-align: center;
+		font-size: 28px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 22px;
+	}
+	&__roadmap-point {
+		position: relative;
+		display: block;
+		width: 36px;
+		height: 36px;
+		margin: 0 auto;
+		border-radius: 50%;
+		background: linear-gradient(to top, #564ae2, #2484ee);
+		transition: all 0.3 ease-in-out;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			pointer-events: none;
+			width: 36px;
+			height: 40px;
+			background-image: url('../img/point-active.png');
+			background-size: 36px 40px;
+			background-repeat: no-repeat;
+			z-index: 1;
+			transition: all 0.3 ease-in-out;
+		}
+	}
+	&__roadmap-option.active &__roadmap-point {
+		&::after {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+	&__tab-content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	&__list {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	&__card {
+		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 750px;
+		&:not(:last-child) {
+			margin-bottom: 29px;
+		}
+	}
+	&__card-heading {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #213087;
+		padding-top: 19px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 5px;
+		z-index: 1;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			pointer-events: none;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			background: linear-gradient(to top, #564ae2, #2484ee);
+			z-index: -1;
+		}
+	}
+	&__card-body {
+		display: block;
+		padding-top: 30px;
+		padding-left: 29px;
+		padding-right: 30px;
+		padding-bottom: 10px;
+	}
+	&__card-title {
+		display: block;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #fff;
+	}
+	&__card-text {
+		display: block;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #fff;
+	}
+	&__collapse {
+		display: none;
+	}
+	&__card.active &__collapse {
+		display: block;
+	}
+	&__card.active &__card-heading {
+		&::after {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+	&__card.active &__card-heading svg {
+		transform: rotate(90deg);
+	}
+	&__select-wrapper {
+		display: none;
+	}
+}
+
+@include for-size(mobile) {
+	.goals-block {
+		padding-top: 21px;
+		padding-bottom: 74px;
+		&__heading {
+			display: block;
+			margin-bottom: 75px;
+		}
+		&__title {
+			font-size: 24px;
+			margin-bottom: 33px;
+		}
+		&__controls-block {
+			display: block;
+			max-width: 100%;
+		}
+		&__controls-block ul {
+			display: block;
+		}
+		&__controls-block ul li:not(:last-child) {
+			margin-bottom: 15px;
+		}
+		&__controls-block ul li a {
+			font-size: 16px;
+		}
+		&__card {
+			max-width: 550px;
+			&:not(:last-child) {
+				margin-bottom: 19px;
+			}
+		}
+		&__card-heading {
+			padding-top: 8px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 7px;
+		}
+		&__card-title {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.4;
+		}
+		&__card-text {
+			font-size: 14px;
+		}
+		&__roadmap-photo {
+			img {
+				display: none;
+			}
+			img.mobile {
+				display: block;
+			}
+		}
+		&__roadmap-inner {
+			left: 0;
+			transform: translateX(0);
+			max-width: 100%;
+		}
+		&__roadmap-year {
+			font-size: 20px;
+			margin-bottom: 12px;
+		}
+		&__roadmap-photo {
+			margin-bottom: 108px;
+		}
+		&__roadmap-point {
+			width: 29px;
+			height: 29px;
+			&::after {
+				width: 29px;
+				height: 33px;
+				background-size: 29px 33px;
+			}
+		}
+		&__roadmap-option {
+			&.first {
+				left: 0;
+				bottom: 1px;
+			}
+			&.second {
+				top: -11px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			&.third {
+				top: -23px;
+				left: auto;
+				right: 0;
+			}
+			&.fourth {
+				display: none;
+			}
+		}
+		.button-goals-next, .button-goals-prev {
+			top: -73px;
+			width: 33px;
+			height: 33px;
+			svg {
+				width: 6px;
+				height: 11px;
+			}
+		}
+		.button-goals-prev {
+			left: 5px;
+			svg {
+				margin-right: 4px;
+			}
+		}
+		.button-goals-next {
+			left: 46px;
+		}
+		&__controls-block {
+			display: none;
+		}
+		&__select-wrapper {
+			display: block;
+		}
+		&__card-heading svg {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+	.goals-block {
+		&__roadmap-option {
+			&.second {
+				top: -10px;
+			}
+			&.third {
+				top: -18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+	.goals-block {
+		&__roadmap-option {
+			&.second {
+				top: -5px;
+			}
+			&.third {
+				top: -18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 411px) and (max-width: 424px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				bottom: 10px;
+			}
+			&.second {
+				top: -5px;
+			}
+			&.third {
+				top: -18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				bottom: 10px;
+			}
+			&.second {
+				top: 0;
+			}
+			&.third {
+				top: -18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 460px) and (max-width: 499px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				bottom: 10px;
+			}
+			&.second {
+				top: 5px;
+			}
+			&.third {
+				top: -18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				bottom: 10px;
+			}
+			&.second {
+				top: 10px;
+			}
+			&.third {
+				top: -10px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				bottom: 20px;
+			}
+			&.second {
+				top: 20px;
+			}
+			&.third {
+				top: -5px;
+			}
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.goals-block {
+		padding-top: 75px;
+		padding-bottom: 150px;
+		&__heading {
+			display: block;
+		}
+		&__title {
+			font-size: 34px;
+			margin-bottom: 60px;
+		}
+		&__controls-block {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		&__controls-block ul li a {
+			font-size: 16px;
+		}
+		&__card {
+			max-width: 550px;
+		}
+		&__card-heading {
+			padding-top: 16px;
+			padding-bottom: 17px;
+		}
+		&__card-title {
+			font-size: 18px;
+		}
+		&__card-text {
+			font-size: 14px;
+		}
+		&__roadmap-year {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		&__roadmap-point {
+			width: 25px;
+			height: 25px;
+			&::after {
+				width: 25px;
+				height: 29px;
+				background-size: 25px 29px;
+			}
+		}
+		&__roadmap-option {
+			&.first {
+				left: 120px;
+				bottom: -5px;
+			}
+			&.second {
+				top: 25px;
+				left: 270px;
+			}
+			&.third {
+				top: -5px;
+				left: auto;
+				right: 270px;
+			}
+			&.fourth {
+				top: 6px;
+				left: auto;
+				right: 110px;
+			}
+		}
+		.button-goals-next, .button-goals-prev {
+			top: 90px;
+			width: 45px;
+			height: 45px;
+			svg {
+				width: 10px;
+				height: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				left: 160px;
+				bottom: 0;
+			}
+			&.second {
+				top: 50px;
+				left: 370px;
+			}
+			&.third {
+				top: 12px;
+				left: auto;
+				right: 370px;
+			}
+			&.fourth {
+				top: 25px;
+				left: auto;
+				right: 160px;
+			}
+		}
+	}
+}
+
+@include for-size(desktop) {
+	.goals-block {
+		&__controls-block ul li a {
+			
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				left: 200px;
+			}
+			&.second {
+				top: 75px;
+				left: 510px;
+			}
+			&.third {
+				top: 15px;
+				left: auto;
+				right: 515px;
+			}
+			&.fourth {
+				top: 35px;
+				left: auto;
+				right: 220px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+	.goals-block {
+		&__roadmap-option {
+			&.first {
+				left: 180px;
+			}
+			&.second {
+				top: 88px;
+				left: 496px;
+			}
+			&.third {
+				top: 26px;
+				left: auto;
+				right: 500px;
+			}
+			&.fourth {
+				top: 50px;
+				left: auto;
+				right: 180px;
+			}
+		}
+	}
+}

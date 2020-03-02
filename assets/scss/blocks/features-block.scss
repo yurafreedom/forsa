@@ -1,6 +1,6 @@
 .features-block {
-	padding-top: 150px;
-	padding-bottom: 130px;
+	padding-top: 128px;
+	padding-bottom: 100px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -12,14 +12,14 @@
 		font-size: 40px;
 		font-weight: 700;
 		color: #fff;
-		margin-bottom: 115px;
+		margin-bottom: 102px;
 	}
 	&__section-title {
 		position: absolute;
-		top: 320px;
+		top: 322px;
 		bottom: auto;
 		width: 9px;
-		left: -130px;
+		left: -150px;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 1;
@@ -29,7 +29,7 @@
 			position: relative;
 			display: block;
 			left: 0;
-			bottom: 10px;
+			bottom: 30px;
 			transform: rotate(-90deg);
 		}
 		span {
@@ -39,6 +39,8 @@
 			transform: rotate(-90deg);
 		}
 		img {
+			position: relative;
+			top: -5px;
 			display: block;
 			width: 9px;
 			height: 299px;
@@ -58,7 +60,7 @@
 		padding-top: 45px;
 		padding-left: 35px;
 		padding-right: 35px;
-		padding-bottom: 70px;
+		padding-bottom: 48px;
 		margin-bottom: 30px;
 		min-height: 444px;
 		background: #213087;
@@ -126,8 +128,8 @@
 
 @include for-size(mobile) {
 	.features-block {
-		padding-top: 45px;
-		padding-bottom: 45px;
+		padding-top: 40px;
+		padding-bottom: 35px;
 		&__title {
 			font-size: 25px;
 			margin-bottom: 35px;
@@ -142,8 +144,11 @@
 		&__card-block {
 			width: 100%;
 			max-width: 100%;
-			min-height: 314px;
-			padding: 30px 25px;
+			min-height: 260px;
+			padding-top: 28px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 12px;
 			margin-bottom: 15px;
 			&:not(:nth-child(3n)) {
 				margin-right: 0;
@@ -151,6 +156,11 @@
 			&:not(:nth-child(2n)) {
 				margin-right: 0;
 			} 
+		}
+		&__card-icon {
+			width: 75px;
+			height: 87px;
+			margin-bottom: 0;
 		}
 		&__card-body {
 			margin-bottom: 15px;

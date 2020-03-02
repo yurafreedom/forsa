@@ -41,6 +41,9 @@ body.scroll-top-active .page-header__scroll-up {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
+		width: 100%;
+		max-width: 1590px;
+		margin: 0 auto;
 	}
 	&__top-description {
 		position: absolute;
@@ -64,7 +67,10 @@ body.scroll-top-active .page-header__scroll-up {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding-top: 30px;
+		padding-top: 20px;
+		width: 100%;
+		max-width: 1530px;
+		margin: 0 auto;
 	}
 	&__toggle-language {
 		outline: 0;
@@ -155,6 +161,7 @@ body.scroll-top-active .page-header__scroll-up {
 	&__nav {
 		position: relative;
 		display: block;
+		margin-left: 52px;
 	}
 	&__nav ul {
 		display: flex;
@@ -170,7 +177,7 @@ body.scroll-top-active .page-header__scroll-up {
 		font-weight: 600;
 	}
 	&__nav ul li:not(:last-child) {
-		margin-right: 50px;
+		margin-right: 52px;
 	}
 	&__nav ul li a {
 		position: relative;
@@ -423,7 +430,11 @@ body.scroll-top-active .page-header__scroll-up {
 			padding-bottom: 26px;
 		}
 		&__bottom-part {
-			padding-top: 20px;
+			width: 100%;
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			max-width: 100%;			
 		}
 		&__top-description {
 			top: 10px;
@@ -441,6 +452,13 @@ body.scroll-top-active .page-header__scroll-up {
 		}
 		&__scroll-up {
 			display: none;
+		}
+		&__top-description {
+			line-height: 1;
+		}
+		&__toggle span {
+			top: 15px;
+			left: -1px;
 		}
 	}
 }
@@ -467,17 +485,35 @@ body.scroll-top-active .page-header__scroll-up {
 		&__scroll-up {
 			display: none;
 		}
+		&__bottom-part {
+			max-width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 }
 
 @include for-size(desktop) {
 	.page-header {
-		&__wrapper {
+		&__bottom-part {
+			max-width: 100%;
 			padding-left: 15px;
 			padding-right: 15px;
 		}
 		&__nav ul li:not(:last-child) {
 			margin-right: 25px;
+		}
+		&__nav ul li a {
+			font-size: 16px;
+		}		
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1560px) {
+	.page-header {
+		&__bottom-part {
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }
