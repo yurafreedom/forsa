@@ -6438,10 +6438,11 @@ body.scroll-top-active .page-header__scroll-up {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
   .page-header__scroll-up {
-    position: absolute;
-    left: auto;
-    right: 0;
-    bottom: -90px;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    left: calc(100vw - 320px);
+    bottom: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -6458,6 +6459,11 @@ body.scroll-top-active .page-header__scroll-up {
     z-index: 120;
     cursor: pointer;
     transition: all 0.3s ease-in-out; }
+    .page-header__scroll-up.fixed {
+      position: absolute;
+      bottom: -90px;
+      left: auto;
+      right: 0; }
     .page-header__scroll-up svg {
       display: block;
       fill: #366fea;
