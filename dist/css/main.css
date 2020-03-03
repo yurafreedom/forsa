@@ -6442,7 +6442,7 @@ body.scroll-top-active .page-header__scroll-up {
     pointer-events: none;
     position: fixed;
     left: calc(100vw - 320px);
-    bottom: 100px;
+    bottom: 80px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -6461,9 +6461,7 @@ body.scroll-top-active .page-header__scroll-up {
     transition: all 0.3s ease-in-out; }
     .page-header__scroll-up.fixed {
       position: absolute;
-      bottom: -90px;
-      left: auto;
-      right: 0; }
+      bottom: 80px; }
     .page-header__scroll-up svg {
       display: block;
       fill: #366fea;
@@ -6553,12 +6551,20 @@ body.scroll-top-active .page-header__scroll-up {
   .page-header__nav ul li:not(:last-child) {
     margin-right: 25px; }
   .page-header__nav ul li a {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .page-header__scroll-up {
+    left: calc(100vw - 80px); } }
 
 @media screen and (min-width: 1440px) and (max-width: 1560px) {
   .page-header__bottom-part {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .page-header__scroll-up {
+    left: calc(100vw - 85px); } }
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .page-header__scroll-up {
+    left: calc(100vw - 160px); } }
 
 .main-block {
   position: relative; }
@@ -8251,7 +8257,7 @@ main {
   .reward-block__diagram-invest-block {
     position: absolute;
     top: -55px;
-    right: -26px;
+    right: -25px;
     display: block; }
   .reward-block__diagram-invest-title {
     display: block;

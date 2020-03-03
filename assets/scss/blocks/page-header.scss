@@ -372,7 +372,7 @@ body.scroll-top-active .page-header__scroll-up {
 		pointer-events: none;
 		position: fixed;
 		left: calc(100vw - 320px);
-		bottom: 100px;
+		bottom: 80px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -387,9 +387,7 @@ body.scroll-top-active .page-header__scroll-up {
 		transition: all 0.3s ease-in-out;
 		&.fixed {
 			position: absolute;
-			bottom: -90px;
-			left: auto;
-			right: 0;
+			bottom: 80px;
 		}
 		svg {
 			display: block;
@@ -512,7 +510,10 @@ body.scroll-top-active .page-header__scroll-up {
 		}
 		&__nav ul li a {
 			font-size: 16px;
-		}		
+		}
+		&__scroll-up {
+			left: calc(100vw - 80px);
+		}
 	}
 }
 
@@ -522,9 +523,19 @@ body.scroll-top-active .page-header__scroll-up {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+		&__scroll-up {
+			left: calc(100vw - 85px);
+		}
 	}
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+	.page-header {
+		&__scroll-up {
+			left: calc(100vw - 160px);
+		}
+	}
+}
 
 
 
