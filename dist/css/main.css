@@ -6777,7 +6777,7 @@ body.scroll-top-active .page-header__scroll-up {
     padding-right: 15px; }
   .main-block__slide {
     min-height: 732px;
-    background-size: auto 732px; }
+    background-size: cover; }
   .main-block__content-heading {
     margin-bottom: 80px; }
   .main-block__about-block {
