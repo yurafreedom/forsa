@@ -10077,6 +10077,12 @@ main {
       .cooperation-block__photo-block:not(:nth-child(2n)) {
         margin-right: 30px; } }
 
+@media screen and (min-width: 990px) and (max-width: 1023px) {
+  .cooperation-block__photo-block:not(:nth-child(2n)) {
+    margin-right: 0; }
+  .cooperation-block__photo-block:not(:nth-child(3n)) {
+    margin-right: 30px; } }
+
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .cooperation-block__photo-block {
     max-width: 300px; }
@@ -10098,6 +10104,12 @@ main {
   .cooperation-block__wrapper {
     padding-left: 15px;
     padding-right: 15px; } }
+
+@media screen and (min-width: 1350px) and (max-width: 1379px) {
+  .cooperation-block__photo-block:not(:nth-child(3n)) {
+    margin-right: 0; }
+  .cooperation-block__photo-block:not(:nth-child(4n)) {
+    margin-right: 30px; } }
 
 @media screen and (min-width: 1380px) and (max-width: 1439px) {
   .cooperation-block__photo-block:not(:nth-child(3n)) {
