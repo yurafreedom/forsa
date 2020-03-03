@@ -7092,7 +7092,8 @@ body.scroll-top-active .page-header__scroll-up {
     border-radius: 50%;
     fill: #fff;
     background: linear-gradient(to top, #564ae2, #2484ee);
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    z-index: 5; }
     .statistic-block__toggle-return:hover {
       background: linear-gradient(to top, #2f97f0, #473dbe); }
     .statistic-block__toggle-return:active, .statistic-block__toggle-return:focus {
@@ -7198,6 +7199,15 @@ body.scroll-top-active .page-header__scroll-up {
         margin-right: 0; }
       .statistic-block__card:not(:nth-child(3n)) {
         margin-right: 30px; } }
+
+@media screen and (min-width: 731px) and (max-width: 767px) {
+  .statistic-block__list {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .statistic-block__card:not(:nth-child(3n)) {
+    margin-right: 0; }
+  .statistic-block__card:not(:nth-child(4n)) {
+    margin-right: 7px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .statistic-block__title {
@@ -7527,7 +7537,8 @@ body.scroll-top-active .page-header__scroll-up {
     .news-block__section-title {
       display: none; }
     .news-block__article-block {
-      max-width: 350px; }
+      max-width: 100%;
+      margin-right: 30px; }
     .news-block__content-wrapper {
       width: 100%; }
     .news-block__content-block {
@@ -7589,7 +7600,7 @@ body.scroll-top-active .page-header__scroll-up {
     width: 100%;
     height: auto; }
   .news-block__content-block {
-    max-width: 450px; }
+    max-width: 100%; }
   .news-block__card {
     max-width: 200px; }
   .news-block__card-photo {
@@ -7610,7 +7621,8 @@ body.scroll-top-active .page-header__scroll-up {
     .news-block__article-block {
       max-width: 550px; }
     .news-block__content-block {
-      max-width: 500px; }
+      max-width: 100%;
+      margin-left: 30px; }
     .news-block__article-photo {
       width: 550px;
       height: 339px; }
@@ -8049,6 +8061,10 @@ main {
       margin-bottom: 25px; }
       .stats-block__title::before {
         left: 0; }
+    .stats-block__specification-block {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      margin-right: 60px; }
     .stats-block__specification-card-wrapper {
       max-width: 200px; }
     .stats-block__specification-card {
@@ -8077,7 +8093,7 @@ main {
       top: 15px;
       right: 0; }
     .stats-block__list {
-      max-width: 422px; }
+      max-width: 420px; }
     .stats-block__specification-main-card .stats-block__specification-card-title {
       font-size: 20px; }
     .stats-block__specification-main-card .stats-block__specification-card-value {
@@ -8102,6 +8118,13 @@ main {
     .stats-block__cost-block .stats-block__title::before {
       top: -120px;
       left: 0; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .stats-block__list {
+    max-width: 600px; }
+  .stats-block__coin-container {
+    width: 100%;
+    max-width: 600px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   main {
@@ -9048,18 +9071,22 @@ main {
       font-size: 15px; }
       .shard-block__honeycombs-option.first {
         top: 97px;
-        left: 137px; }
+        left: auto;
+        right: 80px; }
       .shard-block__honeycombs-option.second {
         display: none; }
       .shard-block__honeycombs-option.third {
         top: 125px;
-        left: 232px; }
+        left: auto;
+        right: -8px; }
       .shard-block__honeycombs-option.fourth {
         top: 166px;
-        left: 70px; }
+        left: auto;
+        right: 150px; }
       .shard-block__honeycombs-option.fifth {
         top: 261px;
-        left: 105px;
+        left: auto;
+        right: 150px;
         font-size: 16px; }
       .shard-block__honeycombs-option.sixth {
         top: 214px;
@@ -9067,47 +9094,12 @@ main {
         right: -40px; }
       .shard-block__honeycombs-option.seventh {
         top: 284px;
-        left: 188px; }
+        left: auto;
+        right: 35px; }
       .shard-block__honeycombs-option.eighth {
         display: none; } }
 
-@media screen and (min-width: 360px) and (max-width: 374px) {
-  .shard-block__honeycombs-option.first {
-    left: 175px; }
-  .shard-block__honeycombs-option.third {
-    left: 265px; }
-  .shard-block__honeycombs-option.fourth {
-    left: 110px; }
-  .shard-block__honeycombs-option.fifth {
-    left: 140px; }
-  .shard-block__honeycombs-option.sixth {
-    right: -30px; }
-  .shard-block__honeycombs-option.seventh {
-    left: 225px; } }
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .shard-block__honeycombs-option.first {
-    left: 190px; }
-  .shard-block__honeycombs-option.third {
-    left: 280px; }
-  .shard-block__honeycombs-option.fourth {
-    left: 125px; }
-  .shard-block__honeycombs-option.fifth {
-    left: 155px; }
-  .shard-block__honeycombs-option.sixth {
-    right: -30px; }
-  .shard-block__honeycombs-option.seventh {
-    left: 235px; } }
-
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  .shard-block__honeycombs-option.first {
-    left: 195px; }
-  .shard-block__honeycombs-option.third {
-    left: 285px; }
-  .shard-block__honeycombs-option.fourth {
-    left: 130px; }
-  .shard-block__honeycombs-option.seventh {
-    left: 245px; }
   .shard-block__content-block {
     max-width: 100%; } }
 
@@ -9141,44 +9133,39 @@ main {
         top: -120px;
         left: -65px; }
     .shard-block__honeycombs-option {
-      font-size: 15px; }
+      font-size: 16px; }
       .shard-block__honeycombs-option.first {
-        top: 30px;
-        left: 0; }
+        top: 5px;
+        left: auto;
+        right: 395px; }
       .shard-block__honeycombs-option.second {
-        left: 80px;
-        top: -45px; }
+        left: auto;
+        right: 290px;
+        top: 30px; }
       .shard-block__honeycombs-option.third {
-        top: -20px;
-        left: 180px; }
-      .shard-block__honeycombs-option.fourth {
         top: 80px;
-        left: 210px; }
+        left: auto;
+        right: 85px; }
+      .shard-block__honeycombs-option.fourth {
+        top: -45px;
+        left: auto;
+        right: 215px; }
       .shard-block__honeycombs-option.fifth {
-        top: 140px;
-        left: 40px; }
+        top: 135px;
+        left: auto;
+        right: 295px; }
       .shard-block__honeycombs-option.sixth {
         top: 160px;
-        left: 135px; }
+        left: auto;
+        right: 165px; }
       .shard-block__honeycombs-option.seventh {
-        display: none;
-        top: 188px;
-        left: 235px; }
+        top: -20px;
+        left: auto;
+        right: 115px; }
       .shard-block__honeycombs-option.eighth {
-        top: 188px;
-        left: 235px; } }
-
-@media screen and (min-width: 800px) and (max-width: 992px) {
-  .shard-block__honeycombs-inner {
-    left: 15px; } }
-
-@media screen and (min-width: 992px) and (max-width: 1023px) {
-  .shard-block__honeycombs-inner {
-    left: 140px; } }
-
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-  .shard-block__honeycombs-inner {
-    left: 175px; } }
+        top: 190px;
+        left: auto;
+        right: 60px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .shard-block__section-title {
@@ -9195,7 +9182,41 @@ main {
     .shard-block__text p {
       margin-bottom: 20px; }
   .shard-block__honeycombs-inner {
-    left: -140px; } }
+    left: 0; }
+  .shard-block__honeycombs-option {
+    font-size: 24px; }
+    .shard-block__honeycombs-option.first {
+      top: 70px;
+      left: auto;
+      right: 535px; }
+    .shard-block__honeycombs-option.second {
+      left: auto;
+      right: 300px;
+      top: 0; }
+    .shard-block__honeycombs-option.third {
+      top: 40px;
+      left: auto;
+      right: 160px; }
+    .shard-block__honeycombs-option.fourth {
+      top: 110px;
+      left: auto;
+      right: 400px; }
+    .shard-block__honeycombs-option.fifth {
+      top: 250px;
+      left: auto;
+      right: 410px; }
+    .shard-block__honeycombs-option.sixth {
+      top: 180px;
+      left: auto;
+      right: 120px; }
+    .shard-block__honeycombs-option.seventh {
+      top: 280px;
+      left: auto;
+      right: 220px; }
+    .shard-block__honeycombs-option.eighth {
+      top: 320px;
+      left: auto;
+      right: 90px; } }
 
 .features-block {
   padding-top: 128px;

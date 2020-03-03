@@ -274,22 +274,26 @@
 			font-size: 15px;
 			&.first {
 				top: 97px;
-				left: 137px;
+				left: auto;
+				right: 80px;
 			}
 			&.second {
 				display: none;
 			}
 			&.third {
 				top: 125px;
-				left: 232px;
+				left: auto;
+				right: -8px;
 			}
 			&.fourth {
 				top: 166px;
-				left: 70px;
+				left: auto;
+				right: 150px;
 			}
 			&.fifth {
 				top: 261px;
-				left: 105px;
+				left: auto;
+				right: 150px;
 				font-size: 16px;
 			}
 			&.sixth {
@@ -299,7 +303,8 @@
 			}
 			&.seventh {
 				top: 284px;
-				left: 188px;
+				left: auto;
+				right: 35px;
 			}
 			&.eighth {
 				display: none;
@@ -308,72 +313,8 @@
 	}
 }
 
-@media screen and (min-width: 360px) and (max-width: 374px) {
-	.shard-block {
-		&__honeycombs-option {
-			&.first {
-				left: 175px;
-			}
-			&.third {
-				left: 265px;
-			}
-			&.fourth {
-				left: 110px;
-			}
-			&.fifth {
-				left: 140px;
-			}
-			&.sixth {
-				right: -30px;
-			}
-			&.seventh {
-				left: 225px;
-			}
-		}
-	}
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-	.shard-block {
-		&__honeycombs-option {
-			&.first {
-				left: 190px;
-			}
-			&.third {
-				left: 280px;
-			}
-			&.fourth {
-				left: 125px;
-			}
-			&.fifth {
-				left: 155px;
-			}
-			&.sixth {
-				right: -30px;
-			}
-			&.seventh {
-				left: 235px;
-			}
-		}
-	}
-}
-
 @media screen and (min-width: 425px) and (max-width: 767px) {
 	.shard-block {
-		&__honeycombs-option {
-			&.first {
-				left: 195px;
-			}
-			&.third {
-				left: 285px;
-			}
-			&.fourth {
-				left: 130px;
-			}
-			&.seventh {
-				left: 245px;
-			}
-		}
 		&__content-block {
 			max-width: 100%;
 		}
@@ -420,64 +361,47 @@
 			}
 		}
 		&__honeycombs-option {
-			font-size: 15px;
+			font-size: 16px;
 			&.first {
-				top: 30px;
-				left: 0;
+				top: 5px;
+				left: auto;
+				right: 395px;
 			}
 			&.second {
-				left: 80px;
-				top: -45px;
+				left: auto;
+				right: 290px;
+				top: 30px;
 			}
 			&.third {
-				top: -20px;
-				left: 180px;
+				top: 80px;
+				left: auto;
+				right: 85px;
 			}
 			&.fourth {
-				top: 80px;
-				left: 210px;
+				top: -45px;
+				left: auto;
+				right: 215px;
 			}
 			&.fifth {
-				top: 140px;
-				left: 40px;
+				top: 135px;
+				left: auto;
+				right: 295px;
 			}
 			&.sixth {
 				top: 160px;
-				left: 135px;
+				left: auto;
+				right: 165px;
 			}
 			&.seventh {
-				display: none;
-				top: 188px;
-				left: 235px;
+				top: -20px;
+				left: auto;
+				right: 115px;
 			}
 			&.eighth {
-				top: 188px;
-				left: 235px;
+				top: 190px;
+				left: auto;
+				right: 60px;
 			}
-		}
-	}
-}
-
-@media screen and (min-width: 800px) and (max-width: 992px) {
-	.shard-block {
-		&__honeycombs-inner {
-			left: 15px;
-		}
-	}
-}
-
-@media screen and (min-width: 992px) and (max-width: 1023px) {
-	.shard-block {
-		&__honeycombs-inner {
-			left: 140px;
-		}
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-	.shard-block {
-		&__honeycombs-inner {
-			left: 175px;
 		}
 	}
 }
@@ -504,7 +428,50 @@
 			}
 		}
 		&__honeycombs-inner {
-			left: -140px;
+			left: 0;
+		}
+		&__honeycombs-option {
+			font-size: 24px;
+			&.first {
+				top: 70px;
+				left: auto;
+				right: 535px;
+			}
+			&.second {
+				left: auto;
+				right: 300px;
+				top: 0;
+			}
+			&.third {
+				top: 40px;
+				left: auto;
+				right: 160px;
+			}
+			&.fourth {
+				top: 110px;
+				left: auto;
+				right: 400px;
+			}
+			&.fifth {
+				top: 250px;
+				left: auto;
+				right: 410px;
+			}
+			&.sixth {
+				top: 180px;
+				left: auto;
+				right: 120px;
+			}
+			&.seventh {
+				top: 280px;
+				left: auto;
+				right: 220px;
+			}
+			&.eighth {
+				top: 320px;
+				left: auto;
+				right: 90px;
+			}
 		}
 	}
 }

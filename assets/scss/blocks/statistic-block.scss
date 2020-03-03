@@ -40,6 +40,7 @@
 		fill: #fff;
 		background: linear-gradient(to top, #564ae2, #2484ee);
 		transition: all 0.3s ease-in-out;
+		z-index: 5;
 		&:hover {
 			background: linear-gradient(to top, #2f97f0, #473dbe);
 		}
@@ -178,6 +179,20 @@
 			&:not(:nth-child(3n)) {
 				margin-right: 30px;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 731px) and (max-width: 767px) {
+	.statistic-block {
+		&__list {
+			justify-content: flex-start;
+		}
+		&__card:not(:nth-child(3n)) {
+			margin-right: 0;
+		}
+		&__card:not(:nth-child(4n)) {
+			margin-right: 7px;
 		}
 	}
 }

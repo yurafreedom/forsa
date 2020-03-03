@@ -494,6 +494,10 @@ main {
 				left: 0;
 			}
 		}
+		&__specification-block {
+			flex-shrink: 0;
+			margin-right: 60px;
+		}
 		&__specification-card-wrapper {
 			max-width: 200px;
 		}
@@ -532,7 +536,7 @@ main {
 			}
 		}
 		&__list {
-			max-width: 422px;
+			max-width: 420px;
 		}
 		&__specification-main-card &__specification-card-title {
 			font-size: 20px;
@@ -572,6 +576,18 @@ main {
 				top: -120px;
 				left: 0;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.stats-block {
+		&__list {
+			max-width: 600px;
+		}
+		&__coin-container {
+			width: 100%;
+			max-width: 600px;
 		}
 	}
 }

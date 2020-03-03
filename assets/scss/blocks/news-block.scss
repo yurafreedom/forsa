@@ -352,7 +352,8 @@
 			display: none;
 		}
 		&__article-block {
-			max-width: 350px;
+			max-width: 100%;
+			margin-right: 30px;
 		}
 		&__content-wrapper {
 			width: 100%;
@@ -436,7 +437,7 @@
 			height: auto;
 		}
 		&__content-block {
-			max-width: 450px;
+			max-width: 100%;
 		}
 		&__card {
 			max-width: 200px;
@@ -468,7 +469,8 @@
 			max-width: 550px;
 		}
 		&__content-block {
-			max-width: 500px;
+			max-width: 100%;
+			margin-left: 30px;
 		}
 		&__article-photo {
 			width: 550px;
