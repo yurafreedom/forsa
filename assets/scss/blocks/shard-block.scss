@@ -466,6 +466,22 @@
 	}
 }
 
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+	.shard-block {
+		&__honeycombs-inner {
+			left: 140px;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.shard-block {
+		&__honeycombs-inner {
+			left: 175px;
+		}
+	}
+}
+
 @include for-size(desktop) {
 	.shard-block {
 		&__section-title {
