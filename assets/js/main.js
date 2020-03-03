@@ -430,7 +430,7 @@ $(window).on('scroll', function() {
     var footerPos;
   
     if ($(window).width() > 1199) {
-      fixedBottomPos = 132;
+      fixedBottomPos = 100;
     } else {
       fixedBottomPos = 30;
     }

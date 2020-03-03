@@ -108,7 +108,7 @@
 			display: block;
 			left: auto;
 			right: 50px;
-			bottom: 66px;
+			bottom: 80px;
 			transform: rotate(90deg);
 		}
 		b span {
@@ -142,6 +142,8 @@
 		top: 0;
 		left: 0;
 		right: auto;
+		width: 100%;
+		height: 100%;
 		z-index: 1;
 	}
 	&__honeycombs-option {
@@ -399,15 +401,7 @@
 			}
 		}
 		&__honeycombs-photo {
-			top: 0;
-			right: 0;
-			width: 100%;
-		}
-		&__honeycombs-inner {
-			left: -140px;
-		}
-		&__honeycombs-block {
-			max-width: 350px;
+			width: 600px;
 		}
 		&__honeycombs-title {
 			font-size: 24px;
@@ -426,39 +420,48 @@
 			}
 		}
 		&__honeycombs-option {
-			font-size: 10px;
+			font-size: 15px;
 			&.first {
-				top: 114px;
-				left: 195px;
+				top: 30px;
+				left: 0;
 			}
 			&.second {
-				left: 356px;
-				top: 102px;
+				left: 80px;
+				top: -45px;
 			}
 			&.third {
-				top: 90px;
-				left: 296px;
+				top: -20px;
+				left: 180px;
 			}
 			&.fourth {
-				top: 130px;
-				left: 252px;
+				top: 80px;
+				left: 210px;
 			}
 			&.fifth {
-				top: 160px;
-				left: 386px;
+				top: 140px;
+				left: 40px;
 			}
 			&.sixth {
-				top: 190px;
-				left: 268px;
+				top: 160px;
+				left: 135px;
 			}
 			&.seventh {
-				top: 208px;
-				left: 328px;
+				display: none;
+				top: 188px;
+				left: 235px;
 			}
 			&.eighth {
-				top: 222px;
-				left: 388px;
+				top: 188px;
+				left: 235px;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 992px) {
+	.shard-block {
+		&__honeycombs-inner {
+			left: 15px;
 		}
 	}
 }

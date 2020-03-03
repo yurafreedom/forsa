@@ -208,6 +208,17 @@
 	}
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.features-block {
+		&__card-block:not(:nth-child(2n)) {
+			margin-right: 0;
+		}
+		&__card-block:not(:nth-child(3n)) {
+			margin-right: 30px;
+		}
+	}
+}
+
 @include for-size(desktop) {
 	.features-block {
 		&__section-title {
