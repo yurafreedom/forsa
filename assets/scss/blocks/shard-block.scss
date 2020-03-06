@@ -1,5 +1,5 @@
 .shard-block {
-	padding-top: 265px;
+	padding-top: 305px;
 	padding-bottom: 150px;
 	overflow: hidden;
 	&__wrapper {
@@ -16,7 +16,7 @@
 	}
 	&__section-title {
 		position: absolute;
-		top: 170px;
+		top: 175px;
 		bottom: auto;
 		width: 9px;
 		left: -150px;
@@ -108,7 +108,7 @@
 			display: block;
 			left: auto;
 			right: 50px;
-			bottom: 80px;
+			bottom: 65px;
 			transform: rotate(90deg);
 		}
 		b span {
@@ -151,41 +151,41 @@
 		top: 0;
 		left: 0;
 		display: block;
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 600;
 		color: #fff;
 		&.first {
 			top: 70px;
-			left: 155px;
+			left: 165px;
 			color: rgba(255,255,255,0.4);
 		}
 		&.second {
 			top: 7px;
-			left: 392px;
+			left: 400px;
 		}
 		&.third {
 			top: 44px;
-			left: 530px;
+			left: 535px;
 		}
 		&.fourth {
 			top: 106px;
-			left: 294px;
+			left: 300px;
 		}
 		&.fifth {
 			top: 183px;
-			left: 596px;
+			left: 600px;
 		}
 		&.sixth {
 			top: 246px;
-			left: 328px;
+			left: 335px;
 		}
 		&.seventh {
 			top: 282px;
-			left: 465px;
+			left: 470px;
 		}
 		&.eighth {
 			top: 318px;
-			left: 602px;
+			left: 605px;
 			color: rgba(255,255,255,0.4);
 		}
 	}

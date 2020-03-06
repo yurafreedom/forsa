@@ -87,7 +87,7 @@
 		box-shadow: none;
 		text-decoration: none;
 	}
-	&:active, &:focus {
+	&:active {
 		background: #4842b4;
 	}
 	&:active,
@@ -120,6 +120,18 @@
 		max-width: 767px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.btn {
+		&:hover {
+			background-color: inherit;
+		}
+		&:active {
+			background: #4842b4;
+		}
+		&:hover::after {
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 }
 

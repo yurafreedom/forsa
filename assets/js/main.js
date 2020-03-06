@@ -128,8 +128,8 @@ $('.page-header__scroll-up').on('click', function(e) {
 $('select').niceSelect();
 
 $.extend($.validator.messages, {
-    required: "некорректные данные",
-    email: "некорректные данные",
+    required: "Incorrect data",
+    email: "Incorrect data",
 });
 
 $("form").each(function() {

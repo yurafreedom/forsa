@@ -17,6 +17,10 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 549px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	&__slide-heading {
 		position: relative;

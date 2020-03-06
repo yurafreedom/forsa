@@ -93,6 +93,9 @@
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 70px;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	&__about-title {
 		display: block;
