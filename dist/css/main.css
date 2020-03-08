@@ -7542,6 +7542,8 @@ body.scroll-top-active .page-header__scroll-up {
       display: block; }
     .news-block__content-block {
       width: 100%; }
+      .news-block__content-block:not(:last-child) {
+        margin-bottom: 75px; }
     .news-block__content-wrapper .news-block__article-block.active {
       display: block;
       margin-bottom: 83px; }
