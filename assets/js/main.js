@@ -408,5 +408,10 @@ $(window).on('scroll', function() {
     }
 });
 
-document.documentElement.className = "js";
-var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+$(window).on('load', function () {
+  $('body').addClass('loading');
+  window.setTimeout(function () {
+    $('body').addClass('loaded');
+    $('body').removeClass('loading');
+  }, 500);
+}

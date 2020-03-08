@@ -1,10 +1,16 @@
 @@include('template/head.html', {
 	"pagetitle": "Главная страница",
-	"bodyclass": "loading"
+	"bodyclass": ""
 })
 @@include('template/page-header.html', {
 	"logged": "true"
 })
+
+<div class="preloader-block">
+	<div class="preloader-block__row">
+		<div class="preloader-block__option"></div>
+	</div>
+</div>
 
 <div class="main-page-wrap">
 	<div class="main-page-blocks">
