@@ -6331,11 +6331,14 @@ body.loaded .preloader-block {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out; }
+  .page-header__nav ul li:hover .page-header__nav-link--hover,
   .page-header__nav ul li:hover .jq-dropdown {
     opacity: 1;
     pointer-events: all; }
   .page-header__nav-link--hover {
     position: absolute;
+    opacity: 0;
+    pointer-events: none;
     top: 0;
     left: 0;
     right: 0;
