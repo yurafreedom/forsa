@@ -6289,6 +6289,14 @@ body.scroll-top-active .page-header__scroll-up {
     .page-header__nav ul li a:hover, .page-header__nav ul li a:focus, .page-header__nav ul li a:active {
       color: #fff;
       text-decoration: none; }
+  .page-header__nav-link--hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+    height: 275px; }
   .page-header__menu {
     position: fixed;
     top: 0;
