@@ -408,10 +408,18 @@ $(window).on('scroll', function() {
     }
 });
 
-$(window).on('load', function () {
-  $('body').addClass('loading');
+window.onload = function () {
+  document.body.classList.add('loading');
   window.setTimeout(function () {
-    $('body').addClass('loaded');
-    $('body').removeClass('loading');
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loading');
   }, 500);
 }
+
+// $(window).on('load', function () {
+//   $('body').addClass('loading');
+//   window.setTimeout(function () {
+//     $('body').addClass('loaded');
+//     $('body').removeClass('loading');
+//   }, 500);
+// }
