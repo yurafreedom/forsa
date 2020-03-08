@@ -415,10 +415,7 @@ template {
   .btn:hover {
     background-color: inherit; }
   .btn:active {
-    background: #4842b4; }
-  .btn:hover::after {
-    opacity: 0;
-    pointer-events: none; } }
+    background: #4842b4; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
@@ -5782,17 +5779,6 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
 .team-button-next.swiper-button-disabled::after, .adviser-button-next.swiper-button-disabled::after, .cooperation-button-next.swiper-button-disabled::after {
   background-image: url("../img/arrow-right-gray.svg"); }
 
-#jq-dropdown-1.jq-dropdown, #jq-dropdown-2.jq-dropdown, #jq-dropdown-3.jq-dropdown,
-#jq-dropdown-4.jq-dropdown, #jq-dropdown-5.jq-dropdown, #jq-dropdown-6.jq-dropdown {
-  display: block !important;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease-in-out; }
-  #jq-dropdown-1.jq-dropdown.active, #jq-dropdown-2.jq-dropdown.active, #jq-dropdown-3.jq-dropdown.active,
-  #jq-dropdown-4.jq-dropdown.active, #jq-dropdown-5.jq-dropdown.active, #jq-dropdown-6.jq-dropdown.active {
-    opacity: 1;
-    pointer-events: all; }
-
 #jq-dropdown-1.jq-dropdown .jq-dropdown-menu,
 #jq-dropdown-2.jq-dropdown .jq-dropdown-menu,
 #jq-dropdown-3.jq-dropdown .jq-dropdown-menu,
@@ -6289,6 +6275,14 @@ body.scroll-top-active .page-header__scroll-up {
     .page-header__nav ul li a:hover, .page-header__nav ul li a:focus, .page-header__nav ul li a:active {
       color: #fff;
       text-decoration: none; }
+  .page-header__nav .jq-dropdown {
+    display: block !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out; }
+  .page-header__nav ul li:hover .jq-dropdown {
+    opacity: 1;
+    pointer-events: all; }
   .page-header__nav-link--hover {
     position: absolute;
     top: 0;
@@ -7561,6 +7555,10 @@ body.scroll-top-active .page-header__scroll-up {
     .news-block__content-wrapper:not(:last-child) {
       margin-bottom: 20px; } }
 
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .news-block__article-text::after {
+    bottom: -40px; } }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .news-block {
     padding-top: 50px;
@@ -7980,10 +7978,9 @@ main {
       margin-bottom: 15px;
       padding-left: 20px;
       padding-right: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 7px; }
+      padding-bottom: 10px; }
       .stats-block__specification-card:not(:nth-child(2n)) {
-        margin-right: 6px; }
+        margin-right: 8px; }
       .stats-block__specification-card.logo {
         overflow: hidden; }
       .stats-block__specification-card.logo::before {
@@ -8648,7 +8645,7 @@ main {
     padding-top: 11px;
     padding-bottom: 11px;
     border-radius: 5px;
-    width: 255px;
+    width: 247px;
     background: linear-gradient(to top, #564ae2, #2484ee); }
   .competitors-block__card-block.first .competitors-block__card-heading-title {
     border-top-left-radius: 5px;
@@ -9117,9 +9114,9 @@ main {
         left: auto;
         right: 150px; }
       .shard-block__honeycombs-option.fifth {
-        top: 261px;
+        top: 258px;
         left: auto;
-        right: 150px;
+        right: 142px;
         font-size: 16px; }
       .shard-block__honeycombs-option.sixth {
         top: 214px;

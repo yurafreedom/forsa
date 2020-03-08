@@ -329,9 +329,8 @@ main {
 			padding-left: 20px;
 			padding-right: 10px;
 			padding-bottom: 10px;
-			margin-bottom: 7px;
 			&:not(:nth-child(2n)) {
-				margin-right: 6px;
+				margin-right: 8px;
 			}
 			&.logo {
 				overflow: hidden;

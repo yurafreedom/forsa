@@ -128,10 +128,6 @@
 		&:active {
 			background: #4842b4;
 		}
-		&:hover::after {
-			opacity: 0;
-			pointer-events: none;
-		}
 	}
 }
 

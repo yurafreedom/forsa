@@ -232,6 +232,14 @@ $(document).ready(function () {
           nextEl: '.competitor-button-next',
           prevEl: '.competitor-button-prev',
         },
+        breakpoints: {
+            320: {
+              loop: true,
+            },
+            768: {
+              loop: false,
+            },
+        },
         on: {
           slideNextTransitionStart: function () {
             $('.competitor-button-prev').addClass('active');
@@ -331,54 +339,6 @@ $('.page-footer__nav-heading').click( function () {
 $('.goals-block__card-heading').click( function () {
   $(this).toggleClass('in').next().stop().slideToggle(200).parent().toggleClass('active');
 });
-
-$('.page-header__nav-link--first').mouseover(function() {
-  $('#jq-dropdown-1').toggleClass('active');
-});
-
-$('.page-header__nav-link--first').mouseout(function() {
-  $('#jq-dropdown-1').toggleClass('active');
-});
-
-$('.page-header__nav-link--second').mouseover(function() {
-  $('#jq-dropdown-2').addClass('active');
-});
-
-// $('.page-header__nav-link--second').mouseout(function() {
-//   $('#jq-dropdown-2').removeClass('active');
-// });
-
-$('.page-header__nav-link--third').mouseover(function() {
-  $('#jq-dropdown-3').addClass('active');
-});
-
-// $('.page-header__nav-link--third').mouseout(function() {
-//   $('#jq-dropdown-3').removeClass('active');
-// });
-
-$('.page-header__nav-link--fourth').mouseover(function() {
-  $('#jq-dropdown-4').addClass('active');
-});
-
-// $('.page-header__nav-link--fourth').mouseout(function() {
-//   $('#jq-dropdown-4').removeClass('active');
-// });
-
-$('.page-header__nav-link--fifth').mouseover(function() {
-  $('#jq-dropdown-5').addClass('active');
-});
-
-// $('.page-header__nav-link--fifth').mouseout(function() {
-//   $('#jq-dropdown-5').removeClass('active');
-// });
-
-$('.page-header__nav-link--sixth').mouseover(function() {
-  $('#jq-dropdown-6').addClass('active');
-});
-
-// $('.page-header__nav-link--sixth').mouseout(function() {
-//   $('#jq-dropdown-6').removeClass('active');
-// });
 
 $('.team-block__read-link').on('click', function() {
   $(this).parents().addClass('active');

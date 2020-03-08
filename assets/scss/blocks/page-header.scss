@@ -192,6 +192,16 @@ body.scroll-top-active .page-header__scroll-up {
 			text-decoration: none;
 		}
 	}
+	&__nav .jq-dropdown {
+		display: block !important;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s ease-in-out;
+	}
+	&__nav ul li:hover .jq-dropdown {
+		opacity: 1;
+		pointer-events: all;
+	}
 	&__nav-link--hover {
 		position: absolute;
 		top: 0;
