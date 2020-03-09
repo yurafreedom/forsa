@@ -468,11 +468,3 @@ window.onload = function () {
     document.body.classList.remove('loading');
   }, 500);
 }
-
-// $(window).on('load', function () {
-//   $('body').addClass('loading');
-//   window.setTimeout(function () {
-//     $('body').addClass('loaded');
-//     $('body').removeClass('loading');
-//   }, 500);
-// }

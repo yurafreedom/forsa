@@ -24,7 +24,7 @@
 		
 	&__years-slide-item {
 		width: 100%;
-		height: 255px;
+		height: 340px;
 		flex-shrink: 0;
 		position: relative;
 	}
@@ -352,20 +352,20 @@
 		&__roadmap-option {
 			&.first {
 				left: 0;
-				bottom: 1px;
+				bottom: 35px;
 			}
 			&.second {
-				top: -11px;
-				left: 50%;
-				transform: translateX(-50%);
+				top: 30px;
+				left: 80px;
 			}
 			&.third {
-				top: -23px;
+				top: 30px;
 				left: auto;
-				right: 0;
+				right: 80px;
 			}
 			&.fourth {
-				display: none;
+				top: 22px;
+				right: 0;
 			}
 		}
 		.button-goals-next, .button-goals-prev {
@@ -396,6 +396,12 @@
 			width: 10px;
 			height: 10px;
 		}
+		&__years-slider {
+			top: -45px;
+		}
+		&__years-slide-item {
+			height: 120px;
+		}
 	}
 }
 
@@ -403,10 +409,13 @@
 	.goals-block {
 		&__roadmap-option {
 			&.second {
-				top: -10px;
+				top: 35px;
+				left: 80px;
 			}
 			&.third {
-				top: -18px;
+				top: 35px;
+				left: auto;
+				right: 80px;
 			}
 		}
 	}
@@ -416,10 +425,12 @@
 	.goals-block {
 		&__roadmap-option {
 			&.second {
-				top: -5px;
+				top: 35px;
+				left: 90px;
 			}
 			&.third {
-				top: -18px;
+				top: 35px;
+				right: 90px;
 			}
 		}
 	}
@@ -429,13 +440,18 @@
 	.goals-block {
 		&__roadmap-option {
 			&.first {
-				bottom: 10px;
+				bottom: 25px;
 			}
 			&.second {
-				top: -5px;
+				top: 40px;
+				left: 110px;
 			}
 			&.third {
-				top: -18px;
+				top: 40px;
+				right: 110px;
+			}
+			&.fourth {
+				top: 25px;
 			}
 		}
 	}
@@ -445,13 +461,18 @@
 	.goals-block {
 		&__roadmap-option {
 			&.first {
-				bottom: 10px;
+				bottom: 25px;
 			}
 			&.second {
-				top: 0;
+				top: 45px;
+				left: 110px;
 			}
 			&.third {
-				top: -18px;
+				top: 45px;
+				right: 110px;
+			}
+			&.fourth {
+				top: 25px;
 			}
 		}
 	}
@@ -460,14 +481,16 @@
 @media screen and (min-width: 460px) and (max-width: 499px) {
 	.goals-block {
 		&__roadmap-option {
-			&.first {
-				bottom: 10px;
-			}
 			&.second {
-				top: 5px;
+				top: 50px;
+				left: 120px;
 			}
 			&.third {
-				top: -18px;
+				top: 50px;
+				right: 120px;
+			}
+			&.fourth {
+				top: 30px;
 			}
 		}
 	}
@@ -476,14 +499,16 @@
 @media screen and (min-width: 500px) and (max-width: 550px) {
 	.goals-block {
 		&__roadmap-option {
-			&.first {
-				bottom: 10px;
-			}
 			&.second {
-				top: 10px;
+				top: 50px;
+				left: 140px;
 			}
 			&.third {
-				top: -10px;
+				top: 50px;
+				right: 140px;
+			}
+			&.fourth {
+				top: 30px;
 			}
 		}
 	}
@@ -493,14 +518,22 @@
 	.goals-block {
 		&__roadmap-option {
 			&.first {
-				bottom: 20px;
+				bottom: 35px;
 			}
 			&.second {
-				top: 20px;
+				top: 60px;
+				left: 150px;
 			}
 			&.third {
-				top: -5px;
+				top: 60px;
+				right: 150px;
 			}
+			&.fourth {
+				top: 40px;
+			}
+		}
+		&__years-slide-item {
+			height: 140px;
 		}
 	}
 }
@@ -549,10 +582,13 @@
 				background-size: 25px 29px;
 			}
 		}
+		&__years-slide-item {
+			height: 150px;
+		}
 		&__roadmap-option {
 			&.first {
 				left: 120px;
-				bottom: -5px;
+				bottom: 10px;
 			}
 			&.second {
 				top: 25px;
@@ -603,13 +639,36 @@
 				right: 160px;
 			}
 		}
+		&__years-slide-item {
+			height: 182px;
+		}
 	}
 }
 
 @include for-size(desktop) {
 	.goals-block {
-		&__controls-block ul li a {
-			
+		&__years-slide-item {
+			height: 260px;
+		}
+		&__roadmap-option {
+			&.first {
+				left: 200px;
+				bottom: 40px;
+			}
+			&.second {
+				top: 45px;
+				left: 445px;
+			}
+			&.third {
+				top: 0;
+				left: auto;
+				right: 445px;
+			}
+			&.fourth {
+				top: 15px;
+				left: auto;
+				right: 180px;
+			}
 		}
 	}
 }
@@ -635,6 +694,9 @@
 				right: 220px;
 			}
 		}
+		&__years-slide-item {
+			height: 260px;
+		}
 	}
 }
 
@@ -642,7 +704,7 @@
 	.goals-block {
 		&__roadmap-option {
 			&.first {
-				left: 180px;
+				left: 150px;
 			}
 			&.second {
 				top: 88px;
@@ -658,6 +720,9 @@
 				left: auto;
 				right: 180px;
 			}
+		}
+		&__years-slide-item {
+			height: 290px;
 		}
 	}
 }
