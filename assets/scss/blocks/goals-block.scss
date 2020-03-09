@@ -5,6 +5,30 @@
 		position: relative;
 		display: block;
 	}
+	&__years-slider {
+		width: 100%;
+		overflow: hidden;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: 6;
+
+		&:not(.slick-initialized) {
+			display: flex;
+			overflow: hidden;
+		}
+	}
+
+		
+	&__years-slide-item {
+		width: 100%;
+		height: 255px;
+		flex-shrink: 0;
+		position: relative;
+	}
+
 	&__heading {
 		display: flex;
 		flex-direction: row;
@@ -23,6 +47,21 @@
 		display: block;
 		width: 100%;
 		max-width: 725px;
+
+		ul {
+			li {
+				a {
+
+				}
+
+				&.active {
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+		}
 	}
 	&__controls-block ul {
 		display: flex;
@@ -36,6 +75,7 @@
 	&__controls-block ul li a {
 		display: block;
 		font-size: 20px;
+		text-decoration: none;
 		line-height: 1.5;
 		color: #5388ff;
 		transition: all 0.3s ease-in-out;
@@ -108,6 +148,7 @@
 		margin-bottom: 22px;
 	}
 	&__roadmap-point {
+		cursor: pointer;
 		position: relative;
 		display: block;
 		width: 36px;

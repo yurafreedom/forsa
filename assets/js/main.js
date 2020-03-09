@@ -158,7 +158,7 @@ $("form").each(function() {
     });
 });
 
-$('[data-toggle="tab"]').click(function(e) {
+$(document).on('click', '[data-toggle="tab"]', function(e) {
  e.preventDefault();
  
  var thisTarget = $(this).attr('data-target');
@@ -406,6 +406,59 @@ $(window).on('scroll', function() {
     } else {
         $('.page-header__scroll-up').removeClass('fixed');
     }
+});
+
+
+$('.goals-block__years-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+
+  var nextSlideElem = $('.goals-block__years-slider').find('[data-slick-index=' + nextSlide + ']');
+  var currentSlideElem = $('.goals-block__years-slider').find('[data-slick-index=' + currentSlide + ']');
+
+  $(currentSlideElem).find('.active').removeClass('active');
+
+  if ((currentSlide > nextSlide && (nextSlide !== 0 || currentSlide === 1)) || (currentSlide === 0 && nextSlide === slick.slideCount - 1)) {
+    $(nextSlideElem).find('.fourth').addClass('active').trigger('click');
+  } else {
+    $(nextSlideElem).find('.first').addClass('active').trigger('click');
+  }
+});
+
+$('.goals-block__years-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  arrows: false,
+  dots: false,
+  fade: true,
+  swipe: false,
+  draggable: false
+});
+
+$('.button-goals-prev').on('click', function(e) {
+  e.preventDefault();
+
+  var currentSlide = $('.goals-block__years-slider').find('.slick-current');
+  var currentItem = $(currentSlide).find('.active');
+
+  if (!$(currentItem).hasClass('first')) {
+    $(currentItem).removeClass('active').prev().addClass('active').trigger('click');
+  } else {
+    $('.goals-block__years-slider').slick('slickPrev');
+  }
+});
+
+$('.button-goals-next').on('click', function(e) {
+  e.preventDefault();
+
+  var currentSlide = $('.goals-block__years-slider').find('.slick-current');
+  var currentItem = $(currentSlide).find('.active');
+
+  if (!$(currentItem).hasClass('fourth')) {
+    $(currentItem).removeClass('active').next().addClass('active').trigger('click');
+  } else {
+    $('.goals-block__years-slider').slick('slickNext');
+  }
+
 });
 
 window.onload = function () {

@@ -39,11 +39,13 @@ var path = {
 };
 
 var config = {
+	open: true,
+	injectChanges: true,
 	server: {
 		baseDir: './dist'
 	},
 	files: [
-        './dist/css/*.css'
+        './dist/css/main.min.css'
     ],
 	notify: false
 };
@@ -69,6 +71,8 @@ var gulp = require('gulp'),
 
 gulp.task('webserver', function () {
 	webserver.init(config);
+
+	webserver.watch('dist/').on('change', webserver.reload);
 });
 
 
@@ -97,7 +101,10 @@ gulp.task('css:build', function () {
 			suffix: '.min'
 		}))
 		.pipe(cleanCSS())
-		.pipe(gulp.dest(path.build.css));
+		.pipe(gulp.dest(path.build.css))
+		.pipe(webserver.reload({stream: true}));
+
+		done();
 });
 
 gulp.task('watch:css', function() {
