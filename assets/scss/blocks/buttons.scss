@@ -34,6 +34,9 @@
 	font-size: 18px;
 	font-weight: 600;
 	padding-bottom: 15px;
+	&:active {
+		background: #4842b4;
+	}
 }
 
 .btn--subscription {

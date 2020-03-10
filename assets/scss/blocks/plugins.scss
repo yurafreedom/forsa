@@ -84,7 +84,7 @@
   &:hover {
     background: linear-gradient(to top, #2f97f0, #473dbe);
   }
-  &:active, &:focus {
+  &:active {
     background: #4842b4;
   }
 }
@@ -195,7 +195,7 @@
     pointer-events: all;
   }
   &:active {
-    background-color: #4842b4;
+    background: #4842b4;
   }
 }
 
@@ -214,6 +214,9 @@
   padding: 0;
   border: 1px solid transparent;
   z-index: 5;
+  &:active {
+    background-color: #4842b4;
+  }
 }
 
 .button-goals-prev {
@@ -301,7 +304,7 @@
   padding-left: 30px;
   padding-right: 30px;
   transition: all 0.3s ease-in-out;
-  &:hover, &:active, &:focus {
+  &:hover, &:active {
     background-color: #2f357b;
   }
 }

@@ -70,9 +70,6 @@
 		.btn {
 			width: 100%;
 			margin-bottom: 20px;
-			&:active, &:focus {
-				background: #4842b4;
-			}
 		}
 	}
 	&__support-wrapper {
@@ -172,7 +169,7 @@
 			opacity: 1;
 			pointer-events: all;
 		}
-		&:active, &:focus {
+		&:active {
 			background: #4842b4;
 		}
 	}
@@ -216,9 +213,6 @@
 			width: 164px;
 			padding-top: 9px;
 			padding-bottom: 10px;
-			&:active, &:focus {
-				background: #4842b4;
-			}
 		}
 		.btn:not(:last-child) {
 			margin-right: 20px;

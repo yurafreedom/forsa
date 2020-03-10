@@ -280,42 +280,37 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
-  src: local("ProximaNova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"); }
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 600;
-  font-display: fallback;
-  src: local("ProximaNova SemiBold"), local("ProximaNova-SemiBold"), url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"), url("../fonts/ProximaNova-SemiBold.woff") format("woff"); }
+  src: url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"), url("../fonts/ProximaNova-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-family: 'MyriadPro';
   font-style: normal;
   font-weight: 600;
-  font-display: fallback;
-  src: local("MyriadPro SemiBold"), local("MyriadPro-SemiBold"), url("../fonts/MyriadPro-SemiBold.woff2") format("woff2"), url("../fonts/MyriadPro-SemiBold.woff") format("woff"); }
+  src: url("../fonts/MyriadPro-SemiBold.woff2") format("woff2"), url("../fonts/MyriadPro-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local("ProximaNova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"); }
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: 'GothamPro';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
-  src: local("GothamPro Bold"), local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff"); }
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 800;
-  font-display: fallback;
-  src: local("ProximaNova ExtraBold"), local("ProximaNova-ExtraBold"), url("../fonts/ProximaNova-ExtraBold.woff2") format("woff2"), url("../fonts/ProximaNova-ExtraBold.woff") format("woff"); }
+  src: url("../fonts/ProximaNova-ExtraBold.woff2") format("woff2"), url("../fonts/ProximaNova-ExtraBold.woff") format("woff"); }
 
 .container {
   margin: 0 auto;
@@ -396,7 +391,8 @@ template {
   .btn:hover {
     color: #fff;
     box-shadow: none;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: inherit; }
   .btn:active {
     background: #4842b4; }
   .btn:active, .btn:focus, .btn:hover {
@@ -5702,6 +5698,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 15px; }
+  .btn--download:active {
+    background: #4842b4; }
 
 .btn--subscription {
   width: 180px; }
@@ -5781,7 +5779,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   z-index: 10; }
   .competitor-button-prev:hover, .competitor-button-next:hover {
     background: linear-gradient(to top, #2f97f0, #473dbe); }
-  .competitor-button-prev:active, .competitor-button-prev:focus, .competitor-button-next:active, .competitor-button-next:focus {
+  .competitor-button-prev:active, .competitor-button-next:active {
     background: #4842b4; }
 
 .competitor-button-prev {
@@ -5884,7 +5882,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     pointer-events: all; }
   .team-button-next:active, .adviser-button-next:active,
   .cooperation-button-next:active {
-    background-color: #4842b4; }
+    background: #4842b4; }
 
 .button-goals-prev, .button-goals-next {
   position: absolute;
@@ -5905,6 +5903,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   padding: 0;
   border: 1px solid transparent;
   z-index: 5; }
+  .button-goals-prev:active, .button-goals-next:active {
+    background-color: #4842b4; }
 
 .button-goals-prev {
   left: 0; }
@@ -5975,22 +5975,17 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   padding-left: 30px;
   padding-right: 30px;
   transition: all 0.3s ease-in-out; }
-  #jq-dropdown-1.jq-dropdown .jq-dropdown-menu a:hover, #jq-dropdown-1.jq-dropdown .jq-dropdown-menu a:active, #jq-dropdown-1.jq-dropdown .jq-dropdown-menu a:focus,
+  #jq-dropdown-1.jq-dropdown .jq-dropdown-menu a:hover, #jq-dropdown-1.jq-dropdown .jq-dropdown-menu a:active,
   #jq-dropdown-2.jq-dropdown .jq-dropdown-menu a:hover,
   #jq-dropdown-2.jq-dropdown .jq-dropdown-menu a:active,
-  #jq-dropdown-2.jq-dropdown .jq-dropdown-menu a:focus,
   #jq-dropdown-3.jq-dropdown .jq-dropdown-menu a:hover,
   #jq-dropdown-3.jq-dropdown .jq-dropdown-menu a:active,
-  #jq-dropdown-3.jq-dropdown .jq-dropdown-menu a:focus,
   #jq-dropdown-4.jq-dropdown .jq-dropdown-menu a:hover,
   #jq-dropdown-4.jq-dropdown .jq-dropdown-menu a:active,
-  #jq-dropdown-4.jq-dropdown .jq-dropdown-menu a:focus,
   #jq-dropdown-5.jq-dropdown .jq-dropdown-menu a:hover,
   #jq-dropdown-5.jq-dropdown .jq-dropdown-menu a:active,
-  #jq-dropdown-5.jq-dropdown .jq-dropdown-menu a:focus,
   #jq-dropdown-6.jq-dropdown .jq-dropdown-menu a:hover,
-  #jq-dropdown-6.jq-dropdown .jq-dropdown-menu a:active,
-  #jq-dropdown-6.jq-dropdown .jq-dropdown-menu a:focus {
+  #jq-dropdown-6.jq-dropdown .jq-dropdown-menu a:active {
     background-color: #2f357b; }
 
 #jq-dropdown-1.jq-dropdown.jq-dropdown-tip:before,
@@ -7330,7 +7325,7 @@ body.loaded .preloader-block {
     z-index: 5; }
     .statistic-block__toggle-return:hover {
       background: linear-gradient(to top, #2f97f0, #473dbe); }
-    .statistic-block__toggle-return:active, .statistic-block__toggle-return:focus {
+    .statistic-block__toggle-return:active {
       background: #4842b4; }
   .statistic-block__list {
     display: -ms-flexbox;
@@ -7554,7 +7549,7 @@ body.loaded .preloader-block {
       content: '';
       position: absolute;
       left: 0;
-      bottom: -25px;
+      bottom: -40px;
       width: 100%;
       height: 80px;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2)), color-stop(0.5, #fff)); }
@@ -7624,7 +7619,7 @@ body.loaded .preloader-block {
     transition: all 0.3s ease-in-out; }
     .news-block__toggle-next:hover {
       background: linear-gradient(to top, #2f97f0, #473dbe); }
-    .news-block__toggle-next:active, .news-block__toggle-next:focus {
+    .news-block__toggle-next:active {
       background: #4842b4; }
   .news-block__list {
     position: relative;
@@ -8434,7 +8429,7 @@ main {
 
 @media screen and (min-width: 1920px) {
   main {
-    background-size: 100% auto; } }
+    background-size: 100% 100%; } }
 
 .reward-block {
   padding-top: 87px;
@@ -9070,7 +9065,7 @@ main {
     max-width: 290px; } }
 
 .shard-block {
-  padding-top: 305px;
+  padding-top: 220px;
   padding-bottom: 150px;
   overflow: hidden; }
   .shard-block__wrapper {
@@ -10516,7 +10511,7 @@ main {
 
 .goals-block {
   padding-top: 165px;
-  padding-bottom: 245px; }
+  padding-bottom: 220px; }
   .goals-block__wrapper {
     position: relative;
     display: block; }
@@ -11044,6 +11039,23 @@ main {
   .goals-block__years-slide-item {
     height: 290px; } }
 
+@media screen and (min-width: 2560px) {
+  .goals-block__years-slide-item {
+    height: 430px; }
+  .goals-block__roadmap-option.first {
+    left: 0; }
+  .goals-block__roadmap-option.second {
+    top: 178px;
+    left: 405px; }
+  .goals-block__roadmap-option.third {
+    top: 80px;
+    left: auto;
+    right: 420px; }
+  .goals-block__roadmap-option.fourth {
+    top: 130px;
+    left: auto;
+    right: 0; } }
+
 .page-footer {
   position: relative;
   display: -ms-flexbox;
@@ -11117,8 +11129,6 @@ main {
     .page-footer__support-block .btn {
       width: 100%;
       margin-bottom: 20px; }
-      .page-footer__support-block .btn:active, .page-footer__support-block .btn:focus {
-        background: #4842b4; }
   .page-footer__support-wrapper {
     position: relative;
     display: block; }
@@ -11213,7 +11223,7 @@ main {
     .page-footer__copylink:hover::after {
       opacity: 1;
       pointer-events: all; }
-    .page-footer__copylink:active, .page-footer__copylink:focus {
+    .page-footer__copylink:active {
       background: #4842b4; }
   .page-footer__contacts-title {
     display: block;
@@ -11256,8 +11266,6 @@ main {
       width: 164px;
       padding-top: 9px;
       padding-bottom: 10px; }
-      .page-footer__contacts-download .btn:active, .page-footer__contacts-download .btn:focus {
-        background: #4842b4; }
     .page-footer__contacts-download .btn:not(:last-child) {
       margin-right: 20px; }
   .page-footer__btn-wrapper {

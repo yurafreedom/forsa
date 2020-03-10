@@ -1,6 +1,6 @@
 .goals-block {
 	padding-top: 165px;
-	padding-bottom: 245px;
+	padding-bottom: 220px;
 	&__wrapper {
 		position: relative;
 		display: block;
@@ -723,6 +723,33 @@
 		}
 		&__years-slide-item {
 			height: 290px;
+		}
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.goals-block {
+		&__years-slide-item {
+			height: 430px;
+		}
+		&__roadmap-option {
+			&.first {
+				left: 0;
+			}
+			&.second {
+				top: 178px;
+				left: 405px;
+			}
+			&.third {
+				top: 80px;
+				left: auto;
+				right: 420px;
+			}
+			&.fourth {
+				top: 130px;
+				left: auto;
+				right: 0;
+			}
 		}
 	}
 }
