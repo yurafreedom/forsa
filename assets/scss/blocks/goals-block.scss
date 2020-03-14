@@ -334,7 +334,7 @@
 			max-width: 100%;
 		}
 		&__roadmap-year {
-			font-size: 20px;
+			font-size: 18px;
 			margin-bottom: 12px;
 		}
 		&__roadmap-photo {
@@ -355,11 +355,11 @@
 				bottom: 35px;
 			}
 			&.second {
-				top: 30px;
+				top: 35px;
 				left: 80px;
 			}
 			&.third {
-				top: 30px;
+				top: 35px;
 				left: auto;
 				right: 80px;
 			}
@@ -424,13 +424,19 @@
 @media screen and (min-width: 375px) and (max-width: 424px) {
 	.goals-block {
 		&__roadmap-option {
+			&.first {
+				bottom: 30px;
+			}
 			&.second {
-				top: 35px;
+				top: 40px;
 				left: 90px;
 			}
 			&.third {
-				top: 35px;
+				top: 40px;
 				right: 90px;
+			}
+			&.fourth {
+				top: 26px;
 			}
 		}
 	}
@@ -443,15 +449,15 @@
 				bottom: 25px;
 			}
 			&.second {
-				top: 40px;
+				top: 45px;
 				left: 110px;
 			}
 			&.third {
-				top: 40px;
+				top: 45px;
 				right: 110px;
 			}
 			&.fourth {
-				top: 25px;
+				top: 30px;
 			}
 		}
 	}
@@ -472,7 +478,7 @@
 				right: 110px;
 			}
 			&.fourth {
-				top: 25px;
+				top: 30px;
 			}
 		}
 	}
@@ -490,7 +496,7 @@
 				right: 120px;
 			}
 			&.fourth {
-				top: 30px;
+				top: 34px;
 			}
 		}
 	}
@@ -500,15 +506,15 @@
 	.goals-block {
 		&__roadmap-option {
 			&.second {
-				top: 50px;
+				top: 55px;
 				left: 140px;
 			}
 			&.third {
-				top: 50px;
+				top: 55px;
 				right: 140px;
 			}
 			&.fourth {
-				top: 30px;
+				top: 35px;
 			}
 		}
 	}
@@ -521,15 +527,15 @@
 				bottom: 35px;
 			}
 			&.second {
-				top: 60px;
+				top: 65px;
 				left: 150px;
 			}
 			&.third {
-				top: 60px;
+				top: 65px;
 				right: 150px;
 			}
 			&.fourth {
-				top: 40px;
+				top: 42px;
 			}
 		}
 		&__years-slide-item {

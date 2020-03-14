@@ -5924,6 +5924,11 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
   background: #f9fafb;
   border: 1px solid #dfdfdf; }
 
+.team-button-prev.swiper-button-disabled:hover::after,
+.adviser-button-prev.swiper-button-disabled:hover::after,
+.cooperation-button-prev.swiper-button-disabled:hover::after {
+  display: none; }
+
 .team-button-next.swiper-button-disabled:hover::before,
 .adviser-button-next.swiper-button-disabled:hover::before,
 .cooperation-button-next.swiper-button-disabled:hover::before {
@@ -6625,7 +6630,8 @@ body.loaded .preloader-block {
     font-size: 16px;
     font-weight: 600;
     color: #5388ff;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; }
     .page-header__nav-title:hover, .page-header__nav-title:active, .page-header__nav-title:focus {
       color: #fff;
       text-decoration: none; }
@@ -7401,17 +7407,16 @@ body.loaded .preloader-block {
     .statistic-block__card-value {
       font-size: 18px; }
     .statistic-block__card-title {
-      font-size: 14px; } }
+      font-size: 14px; }
+    .statistic-block__list {
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
-@media screen and (min-width: 425px) and (max-width: 454px) {
-  .statistic-block__list {
-    -ms-flex-pack: center;
-        justify-content: center; } }
+@media screen and (min-width: 455px) and (max-width: 553px) {
+  .statistic-block__card:not(:nth-child(2n)) {
+    margin-right: 7px; } }
 
-@media screen and (min-width: 455px) and (max-width: 767px) {
-  .statistic-block__list {
-    -ms-flex-pack: center;
-        justify-content: center; }
+@media screen and (min-width: 554px) and (max-width: 767px) {
   .statistic-block__card:not(:nth-child(2n)) {
     margin-right: 0; }
   .statistic-block__card:not(:nth-child(3n)) {
@@ -8172,8 +8177,7 @@ main {
   main {
     -ms-flex-order: 2;
         order: 2;
-    background-image: url("../img/bg-main-mobile.png");
-    background-size: cover; }
+    background-image: url("../img/bg-main-mobile.png"); }
   .stats-block {
     padding-top: 92px;
     padding-bottom: 50px; }
@@ -8191,21 +8195,25 @@ main {
     .stats-block__wrapper {
       display: block; }
     .stats-block__specification-card-wrapper {
-      max-width: 137px; }
+      max-width: 140px; }
     .stats-block__specification-card {
-      height: 66px;
+      height: 70px;
       max-width: 140px;
-      margin-bottom: 15px;
+      margin-bottom: 6px;
       padding-left: 20px;
       padding-right: 10px;
       padding-bottom: 10px; }
+      .stats-block__specification-card:not(:last-child) {
+        margin-bottom: 6px; }
       .stats-block__specification-card:not(:nth-child(2n)) {
-        margin-right: 8px; }
+        margin-right: 6px; }
       .stats-block__specification-card.logo {
         overflow: hidden; }
       .stats-block__specification-card.logo::before {
         top: 0;
         right: 0; }
+    .stats-block__specification-card-wrapper .stats-block__specification-card:nth-child(2) {
+      margin-bottom: 0; }
     .stats-block__specification-main-card {
       height: 147px;
       max-width: 140px;
@@ -8215,7 +8223,7 @@ main {
       overflow: hidden;
       margin-bottom: 7px; }
       .stats-block__specification-main-card:not(:nth-child(2n)) {
-        margin-right: 10px; }
+        margin-right: 6px; }
     .stats-block__specification-main-card.dark::after {
       top: 15px;
       right: 0; }
@@ -8293,8 +8301,6 @@ main {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .stats-block__list {
-    -ms-flex-pack: center;
-        justify-content: center;
     max-width: 386px;
     margin: 0 auto; }
   .stats-block__specification-main-card, .stats-block__specification-card, .stats-block__specification-card-wrapper {
@@ -8377,8 +8383,6 @@ main {
     max-width: 600px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
-  main {
-    background-size: cover; }
   .stats-block {
     padding-top: 150px;
     padding-bottom: 100px; }
@@ -9016,7 +9020,9 @@ main {
     .competitors-block__points-title, .competitors-block__card-inner-value {
       font-size: 14px; }
     .competitors-block__points-title {
-      padding-left: 20px; } }
+      padding-left: 20px; }
+    .competitors-block #competitors_slider .swiper-slide:first-child {
+      display: none; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .competitors-block__points-block, .competitors-block__points-title {
@@ -9048,7 +9054,9 @@ main {
   .competitors-block__points-title, .competitors-block__card-inner-value {
     font-size: 16px; }
   .competitors-block__card-inner-value span {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .competitors-block #competitors_slider .swiper-slide:first-child {
+    display: none; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .competitors-block__points-block, .competitors-block__points-title {
@@ -9352,6 +9360,10 @@ main {
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .shard-block__content-block {
     max-width: 100%; } }
+
+@media screen and (min-width: 459px) and (max-width: 767px) {
+  .shard-block__title {
+    margin-bottom: 420px; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .shard-block {
@@ -9749,7 +9761,7 @@ main {
     .opportunity-block__card-link:hover, .opportunity-block__card-link:active, .opportunity-block__card-link:focus {
       color: #fff;
       text-decoration: none; }
-  .opportunity-block__card-link:hover::after, .opportunity-block__card-link:active::after, .opportunity-block__card-link:focus::after {
+  .opportunity-block__card-link:hover::after, .opportunity-block__card-link:active::after {
     opacity: 1;
     pointer-events: all; }
   .opportunity-block__section-title {
@@ -9913,7 +9925,7 @@ main {
     border-radius: 5px;
     margin-bottom: 35px;
     overflow: hidden;
-    transition: all 0.6s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .team-block__photo-block img {
       display: block;
       width: 100%; }
@@ -9923,16 +9935,16 @@ main {
     left: 0;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.6s ease-in-out; }
-  .team-block__photo-block:hover .team-block__photo-inner,
-  .team-block__photo-block:active .team-block__photo-inner,
-  .team-block__photo-block:focus .team-block__photo-inner {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    pointer-events: all;
     background: linear-gradient(to top, #564ae2, #2484ee);
-    opacity: 0.8; }
+    transition: all 0.3s ease-in-out; }
+  .team-block__photo-block:hover .team-block__photo-inner,
+  .team-block__photo-block:active .team-block__photo-inner,
+  .team-block__photo-block:focus .team-block__photo-inner {
+    opacity: 0.8;
+    pointer-events: all; }
   .team-block__social-block {
     position: relative;
     display: block;
@@ -10258,8 +10270,9 @@ main {
     .cooperation-block__pagination {
       display: none; }
     .cooperation-block__slide-inner {
-      -ms-flex-pack: center;
-          justify-content: center; }
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto; }
     .cooperation-block__title {
       font-size: 25px;
       margin-bottom: 34px; }
@@ -10303,6 +10316,16 @@ main {
       .cooperation-block__photo-block.eighth img {
         width: 100px;
         height: 50px; } }
+
+@media screen and (min-width: 460px) and (max-width: 767px) {
+  .cooperation-block__slide-inner {
+    max-width: 430px; }
+  .cooperation-block__photo-block.fifth {
+    display: -ms-flexbox;
+    display: flex; }
+  .cooperation-block__photo-block.sixth {
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media screen and (min-width: 452px) and (max-width: 767px) {
   .cooperation-block__photo-block:not(:nth-child(2n)) {
@@ -10800,7 +10823,7 @@ main {
               transform: translateX(0);
       max-width: 100%; }
     .goals-block__roadmap-year {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 12px; }
     .goals-block__roadmap-photo {
       margin-bottom: 108px; }
@@ -10815,10 +10838,10 @@ main {
       left: 0;
       bottom: 35px; }
     .goals-block__roadmap-option.second {
-      top: 30px;
+      top: 35px;
       left: 80px; }
     .goals-block__roadmap-option.third {
-      top: 30px;
+      top: 35px;
       left: auto;
       right: 80px; }
     .goals-block__roadmap-option.fourth {
@@ -10859,24 +10882,28 @@ main {
     right: 80px; } }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
+  .goals-block__roadmap-option.first {
+    bottom: 30px; }
   .goals-block__roadmap-option.second {
-    top: 35px;
+    top: 40px;
     left: 90px; }
   .goals-block__roadmap-option.third {
-    top: 35px;
-    right: 90px; } }
+    top: 40px;
+    right: 90px; }
+  .goals-block__roadmap-option.fourth {
+    top: 26px; } }
 
 @media screen and (min-width: 411px) and (max-width: 424px) {
   .goals-block__roadmap-option.first {
     bottom: 25px; }
   .goals-block__roadmap-option.second {
-    top: 40px;
+    top: 45px;
     left: 110px; }
   .goals-block__roadmap-option.third {
-    top: 40px;
+    top: 45px;
     right: 110px; }
   .goals-block__roadmap-option.fourth {
-    top: 25px; } }
+    top: 30px; } }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .goals-block__roadmap-option.first {
@@ -10888,7 +10915,7 @@ main {
     top: 45px;
     right: 110px; }
   .goals-block__roadmap-option.fourth {
-    top: 25px; } }
+    top: 30px; } }
 
 @media screen and (min-width: 460px) and (max-width: 499px) {
   .goals-block__roadmap-option.second {
@@ -10898,29 +10925,29 @@ main {
     top: 50px;
     right: 120px; }
   .goals-block__roadmap-option.fourth {
-    top: 30px; } }
+    top: 34px; } }
 
 @media screen and (min-width: 500px) and (max-width: 550px) {
   .goals-block__roadmap-option.second {
-    top: 50px;
+    top: 55px;
     left: 140px; }
   .goals-block__roadmap-option.third {
-    top: 50px;
+    top: 55px;
     right: 140px; }
   .goals-block__roadmap-option.fourth {
-    top: 30px; } }
+    top: 35px; } }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .goals-block__roadmap-option.first {
     bottom: 35px; }
   .goals-block__roadmap-option.second {
-    top: 60px;
+    top: 65px;
     left: 150px; }
   .goals-block__roadmap-option.third {
-    top: 60px;
+    top: 65px;
     right: 150px; }
   .goals-block__roadmap-option.fourth {
-    top: 40px; }
+    top: 42px; }
   .goals-block__years-slide-item {
     height: 140px; } }
 
@@ -11084,7 +11111,7 @@ main {
     max-width: 1530px;
     margin: 0 auto;
     padding-top: 138px;
-    padding-bottom: 130px; }
+    padding-bottom: 140px; }
   .page-footer__nav-wrapper {
     position: relative;
     display: -ms-flexbox;
@@ -11363,6 +11390,10 @@ main {
     line-height: 1.2; }
   .page-footer__bottom-part {
     position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 50px;
     background: #fff; }
@@ -11628,6 +11659,9 @@ main {
       margin-bottom: 20px; }
     .page-footer__bottom-part {
       display: block;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
       padding-top: 45px;
       padding-bottom: 0; }
     .page-footer__bottom-wrapper {
@@ -11713,7 +11747,10 @@ main {
         font-size: 14px;
         margin-left: 10px; }
     .page-footer__bottom-part {
-      display: block; }
+      display: block;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px; }
     .page-footer__bottom-wrapper {
       display: block; }
     .page-footer__bottom-nav ul {
@@ -11736,7 +11773,7 @@ main {
 @media (min-width: 1200px) and (max-width: 1439px) {
   .page-footer {
     background-size: cover; }
-    .page-footer__top-part {
+    .page-footer__top-part, .page-footer__bottom-part {
       max-width: 100%;
       padding-left: 15px;
       padding-right: 15px; }
@@ -11763,7 +11800,7 @@ main {
       font-size: 16px; } }
 
 @media screen and (min-width: 1440px) and (max-width: 1529px) {
-  .page-footer__top-part {
+  .page-footer__top-part, .page-footer__bottom-part {
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px; } }

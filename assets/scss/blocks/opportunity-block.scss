@@ -67,8 +67,7 @@
 		}
 	}
 	&__card-link:hover::after,
-	&__card-link:active::after,
-	&__card-link:focus::after {
+	&__card-link:active::after {
 		opacity: 1;
 		pointer-events: all;
 	}

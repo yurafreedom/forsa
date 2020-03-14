@@ -124,22 +124,24 @@
 		&__card-title {
 			font-size: 14px;
 		}
-	}
-}
-
-@media screen and (min-width: 425px) and (max-width: 454px) {
-	.statistic-block {
 		&__list {
 			justify-content: center;
 		}
 	}
 }
 
-@media screen and (min-width: 455px) and (max-width: 767px) {
+@media screen and (min-width: 455px) and (max-width: 553px) {
 	.statistic-block {
-		&__list {
-			justify-content: center;
+		&__card {
+			&:not(:nth-child(2n)) {
+				margin-right: 7px;
+			}
 		}
+	}
+}
+
+@media screen and (min-width: 554px) and (max-width: 767px) {
+	.statistic-block {
 		&__card {
 			&:not(:nth-child(2n)) {
 				margin-right: 0;

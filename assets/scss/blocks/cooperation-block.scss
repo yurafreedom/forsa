@@ -147,7 +147,9 @@
 			display: none;
 		}
 		&__slide-inner {
-			justify-content: center;
+			width: 100%;
+			max-width: 290px;
+			margin: 0 auto;
 		}
 		&__title {
 			font-size: 25px;
@@ -206,6 +208,22 @@
 			&.eighth img {
 				width: 100px;
 				height: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 460px) and (max-width: 767px) {
+	.cooperation-block {
+		&__slide-inner {
+			max-width: 430px;
+		}
+		&__photo-block {
+			&.fifth {
+				display: flex;
+			}
+			&.sixth {
+				display: flex;
 			}
 		}
 	}

@@ -241,6 +241,14 @@
   border: 1px solid #dfdfdf;
 }
 
+.team-button-prev.swiper-button-disabled,
+.adviser-button-prev.swiper-button-disabled,
+.cooperation-button-prev.swiper-button-disabled {
+  &:hover::after {
+    display: none;
+  }
+}
+
 .team-button-next.swiper-button-disabled,
 .adviser-button-next.swiper-button-disabled,
 .cooperation-button-next.swiper-button-disabled {

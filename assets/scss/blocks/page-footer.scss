@@ -12,7 +12,7 @@
 		max-width: 1530px;
 		margin: 0 auto;
 		padding-top: 138px;
-		padding-bottom: 130px;
+		padding-bottom: 140px;
 	}
 	&__nav-wrapper {
 		position: relative;
@@ -306,6 +306,10 @@
 	}
 	&__bottom-part {
 		position: relative;
+		display: block;
+		width: 100%;
+		max-width: 1530px;
+		margin: 0 auto;
 		padding-top: 40px;
 		padding-bottom: 50px;
 		background: #fff;
@@ -615,6 +619,9 @@
 		}
 		&__bottom-part {
 			display: block;
+			max-width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
 			padding-top: 45px;
 			padding-bottom: 0;
 		}
@@ -724,6 +731,9 @@
 		}
 		&__bottom-part {
 			display: block;
+			max-width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 		&__bottom-wrapper {
 			display: block;
@@ -758,7 +768,7 @@
 @include for-size(desktop) {
 	.page-footer {
 		background-size: cover;
-		&__top-part {
+		&__top-part, &__bottom-part {
 			max-width: 100%;
 			padding-left: 15px;
 			padding-right: 15px;
@@ -794,7 +804,7 @@
 
 @media screen and (min-width: 1440px) and (max-width: 1529px) {
 	.page-footer {
-		&__top-part {
+		&__top-part, &__bottom-part {
 			max-width: 100%;
 			padding-left: 15px;
 			padding-right: 15px;

@@ -320,6 +320,9 @@
 		&__points-title {
 			padding-left: 20px;
 		}
+		#competitors_slider .swiper-slide:first-child {
+			display: none;
+		}
 	}
 }
 
@@ -367,6 +370,9 @@
 		}
 		&__card-inner-value span {
 			font-size: 14px;
+		}
+		#competitors_slider .swiper-slide:first-child {
+			display: none;
 		}
 	}
 }
