@@ -296,6 +296,12 @@ template {
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/ProximaNova-ExtraBold.woff2") format("woff2"), url("../fonts/ProximaNova-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"); }
 
@@ -304,12 +310,6 @@ template {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'ProximaNova';
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/ProximaNova-ExtraBold.woff2") format("woff2"), url("../fonts/ProximaNova-ExtraBold.woff") format("woff"); }
 
 .container {
   margin: 0 auto;
