@@ -107,7 +107,7 @@ body.loaded .preloader-block {
 		color: #fff;
 		text-decoration: underline;
 		transition: all 0.3s ease-in-out;
-		&:hover, &:active, &:focus {
+		&:hover, &:active {
 			color: #60c5f4;
 		}
 	}

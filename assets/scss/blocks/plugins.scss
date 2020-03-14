@@ -591,3 +591,17 @@
 [hidden] {
   display: none!important;
 }
+
+.tooltipster-sidetip .tooltipster-box {
+  background-color: #1c2374;
+  border: 1px solid #383f9e;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+  border-top-color: #1c2374;
+  top: -1px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+  border-top-color: #383f9e;
+}

@@ -468,3 +468,10 @@ window.onload = function () {
     document.body.classList.remove('loading');
   }, 500);
 }
+
+$('.tooltip').tooltipster({
+  animation: 'fade',
+  delay: 200,
+  theme: 'tooltipster-shadow',
+  trigger: 'click'
+});
