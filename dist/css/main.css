@@ -285,7 +285,7 @@ template {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"), url("../fonts/ProximaNova-SemiBold.woff") format("woff"); }
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"); }
 
 @font-face {
   font-family: 'MyriadPro';
