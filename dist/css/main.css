@@ -10563,7 +10563,7 @@ main {
       overflow: hidden; }
   .goals-block__years-slide-item {
     width: 100%;
-    height: 340px;
+    height: 440px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     position: relative; }
@@ -10648,7 +10648,7 @@ main {
     .goals-block__roadmap-option.first {
       top: auto;
       left: 83px;
-      bottom: 0; }
+      bottom: 105px; }
     .goals-block__roadmap-option.second {
       top: 120px;
       left: 467px; }
@@ -10677,6 +10677,16 @@ main {
     border-radius: 50%;
     background: linear-gradient(to top, #564ae2, #2484ee);
     transition: all 0.3 ease-in-out; }
+    .goals-block__roadmap-point::before {
+      content: '';
+      position: absolute;
+      top: -125px;
+      left: -125px;
+      width: 253px;
+      height: 253px;
+      background-image: url("../img/glow.png");
+      background-size: cover;
+      background-repeat: no-repeat; }
     .goals-block__roadmap-point::after {
       content: '';
       position: absolute;
@@ -10830,13 +10840,18 @@ main {
     .goals-block__roadmap-point {
       width: 29px;
       height: 29px; }
+      .goals-block__roadmap-point::before {
+        top: -45px;
+        left: -45px;
+        width: 100px;
+        height: 100px; }
       .goals-block__roadmap-point::after {
         width: 29px;
         height: 33px;
         background-size: 29px 33px; }
     .goals-block__roadmap-option.first {
       left: 0;
-      bottom: 35px; }
+      bottom: 65px; }
     .goals-block__roadmap-option.second {
       top: 35px;
       left: 80px; }
@@ -10870,7 +10885,7 @@ main {
     .goals-block__years-slider {
       top: -45px; }
     .goals-block__years-slide-item {
-      height: 120px; } }
+      height: 150px; } }
 
 @media screen and (min-width: 360px) and (max-width: 374px) {
   .goals-block__roadmap-option.second {
@@ -10883,7 +10898,7 @@ main {
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
   .goals-block__roadmap-option.first {
-    bottom: 30px; }
+    bottom: 60px; }
   .goals-block__roadmap-option.second {
     top: 40px;
     left: 90px; }
@@ -10895,7 +10910,7 @@ main {
 
 @media screen and (min-width: 411px) and (max-width: 424px) {
   .goals-block__roadmap-option.first {
-    bottom: 25px; }
+    bottom: 55px; }
   .goals-block__roadmap-option.second {
     top: 45px;
     left: 110px; }
@@ -10907,7 +10922,7 @@ main {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .goals-block__roadmap-option.first {
-    bottom: 25px; }
+    bottom: 55px; }
   .goals-block__roadmap-option.second {
     top: 45px;
     left: 110px; }
@@ -10980,24 +10995,31 @@ main {
     .goals-block__roadmap-point {
       width: 25px;
       height: 25px; }
+      .goals-block__roadmap-point::before {
+        top: -65px;
+        left: -65px;
+        width: 150px;
+        height: 150px; }
       .goals-block__roadmap-point::after {
         width: 25px;
         height: 29px;
         background-size: 25px 29px; }
+    .goals-block__years-slider {
+      top: -70px; }
     .goals-block__years-slide-item {
-      height: 150px; }
+      height: 300px; }
     .goals-block__roadmap-option.first {
       left: 120px;
-      bottom: 10px; }
+      bottom: 90px; }
     .goals-block__roadmap-option.second {
-      top: 25px;
+      top: 95px;
       left: 270px; }
     .goals-block__roadmap-option.third {
-      top: -5px;
+      top: 65px;
       left: auto;
       right: 270px; }
     .goals-block__roadmap-option.fourth {
-      top: 6px;
+      top: 76px;
       left: auto;
       right: 110px; }
     .goals-block .button-goals-next, .goals-block .button-goals-prev {
@@ -11011,42 +11033,47 @@ main {
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   .goals-block__roadmap-option.first {
     left: 160px;
-    bottom: 0; }
+    bottom: 100px; }
   .goals-block__roadmap-option.second {
-    top: 50px;
+    top: 120px;
     left: 370px; }
   .goals-block__roadmap-option.third {
-    top: 12px;
+    top: 82px;
     left: auto;
     right: 370px; }
   .goals-block__roadmap-option.fourth {
-    top: 25px;
+    top: 95px;
     left: auto;
     right: 160px; }
+  .goals-block__years-slider {
+    top: -70px; }
   .goals-block__years-slide-item {
-    height: 182px; } }
+    height: 350px; } }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
+  .goals-block__years-slider {
+    top: -50px; }
   .goals-block__years-slide-item {
-    height: 260px; }
+    height: 400px; }
   .goals-block__roadmap-option.first {
     left: 200px;
-    bottom: 40px; }
+    bottom: 135px; }
   .goals-block__roadmap-option.second {
-    top: 45px;
+    top: 96px;
     left: 445px; }
   .goals-block__roadmap-option.third {
-    top: 0;
+    top: 50px;
     left: auto;
     right: 445px; }
   .goals-block__roadmap-option.fourth {
-    top: 15px;
+    top: 65px;
     left: auto;
     right: 180px; } }
 
 @media screen and (min-width: 1440px) and (max-width: 1599px) {
   .goals-block__roadmap-option.first {
-    left: 200px; }
+    left: 200px;
+    bottom: 140px; }
   .goals-block__roadmap-option.second {
     top: 75px;
     left: 510px; }
@@ -11059,11 +11086,12 @@ main {
     left: auto;
     right: 220px; }
   .goals-block__years-slide-item {
-    height: 260px; } }
+    height: 400px; } }
 
 @media screen and (min-width: 1600px) and (max-width: 1919px) {
   .goals-block__roadmap-option.first {
-    left: 150px; }
+    left: 150px;
+    bottom: 115px; }
   .goals-block__roadmap-option.second {
     top: 88px;
     left: 496px; }
@@ -11076,7 +11104,7 @@ main {
     left: auto;
     right: 180px; }
   .goals-block__years-slide-item {
-    height: 290px; } }
+    height: 400px; } }
 
 @media screen and (min-width: 2560px) {
   .goals-block__years-slide-item {
