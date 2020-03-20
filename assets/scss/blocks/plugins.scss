@@ -111,6 +111,7 @@
 }
 
 .competitor-button-next {
+  display: none;
   right: -37px;
   &::after {
     content: '';
@@ -125,6 +126,9 @@
     background-image: url('../img/arrow-right.svg');
     background-repeat: no-repeat;
     background-position: center center;
+  }
+  &.active {
+    display: block;
   }
 }
 

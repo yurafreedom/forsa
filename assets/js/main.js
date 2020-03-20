@@ -244,6 +244,16 @@ $(document).ready(function () {
           slideNextTransitionStart: function () {
             $('.competitor-button-prev').addClass('active');
           },
+          slideNextTransitionEnd: function () {
+            $('.competitor-button-next').removeClass('active');
+          },
+          slidePrevTransitionStart: function () {
+            $('.competitor-button-next').addClass('active');
+          },
+          slidePrevTransitionEnd: function () {
+            $('.competitor-button-next').addClass('active');
+            $('.competitor-button-prev').removeClass('active');
+          },
         },
       });
       $(window).resize(function() {

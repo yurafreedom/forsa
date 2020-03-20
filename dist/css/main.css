@@ -5800,6 +5800,7 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     display: block; }
 
 .competitor-button-next {
+  display: none;
   right: -37px; }
   .competitor-button-next::after {
     content: '';
@@ -5814,6 +5815,8 @@ input[type="checkbox"]:checked + label .popup-block__standard-check-v {
     background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center center; }
+  .competitor-button-next.active {
+    display: block; }
 
 .team-button-prev, .team-button-next,
 .adviser-button-prev, .adviser-button-next,
@@ -6284,16 +6287,17 @@ body.scroll-top-active .page-header__scroll-up {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
+  width: 35px;
+  height: 35px;
+  margin-top: -17px;
+  margin-left: -17px;
   text-align: center; }
 
 .preloader-block__option {
   position: absolute;
   display: inline-block;
   top: 0;
+  left: 0;
   border-radius: 100%;
   width: 35px;
   height: 35px;
@@ -8177,7 +8181,7 @@ main {
   main {
     -ms-flex-order: 2;
         order: 2;
-    background-image: url("../img/bg-main-mobile.png"); }
+    background-image: url("../img/bg-main-mobile.jpg"); }
   .stats-block {
     padding-top: 92px;
     padding-bottom: 50px; }
@@ -11333,6 +11337,8 @@ main {
       width: 164px;
       padding-top: 9px;
       padding-bottom: 10px; }
+      .page-footer__contacts-download .btn:nth-child(1) span {
+        text-transform: uppercase; }
     .page-footer__contacts-download .btn:not(:last-child) {
       margin-right: 20px; }
   .page-footer__btn-wrapper {
